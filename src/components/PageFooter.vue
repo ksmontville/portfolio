@@ -1,5 +1,7 @@
 <template>
-  <h1>Footer</h1>
+  <section class="footer">
+    Footer
+  </section>
 </template>
 
 <script>

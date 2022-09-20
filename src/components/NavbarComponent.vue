@@ -48,6 +48,7 @@ export default {
 <style scoped>
 
 .navbar {
+   font-size: 0.8rem;
   background-color: lightblue;
 }
 

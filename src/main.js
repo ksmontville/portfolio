@@ -10,6 +10,7 @@ import ProjectsPage from './views/ProjectsPage.vue'
 import ProjectDetails from './views/ProjectDetails.vue'
 import AboutMe from './views/AboutMe.vue'
 import PageFooter from './components/PageFooter.vue'
+import './index.css'
 
 const app = createApp(App)
 
