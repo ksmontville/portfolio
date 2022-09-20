@@ -3,9 +3,9 @@ import { RouterLink, RouterView } from 'vue-router'
 </script>
 
 <template>
-  <header class="bg-gradient-to-b from-black to-gray-700 text-white text-center">
-    <PageHeader />
-  </header>
+<!--  <header class="bg-gradient-to-b from-black to-gray-700 text-white text-center">-->
+<!--    <PageHeader />-->
+<!--  </header>-->
 
   <nav>
     <NavbarComponent />

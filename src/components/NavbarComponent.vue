@@ -1,17 +1,17 @@
 <template>
   <div class="navbar bg-gradient-to-b from-slate-800 to-slate-400 text-white">
-    <div class="navbar navbar-items">
-      <div class="navbar navbar-logo">
-        <router-link :to="{name: 'home'}">KM</router-link>
+    <div class="navbar navbar-items flex flex-row flex-nowrap justify-between p-6">
+      <div class="navbar navbar-logo text-2xl">
+        <router-link :to="{name: 'home'}">Kyle Montville</router-link>
       </div>
-
       <div class="navbar navbar-toggle">
-        <button @click="toggleNav">| | |</button>
+        <button :class="{active: !hidden}" @click="toggleNav">| | |</button>
       </div>
     </div>
 
     <div class="navbar navbar-dropdown" :class="{hidden: hidden}">
-      <div class="navbar navbar-navlinks">
+      <div class="navbar navbar-navlinks flex flex-col flex-nowrap items-start p-4 gap-6">
+        <router-link :to="{name: 'home'}">Home</router-link>
         <router-link :to="{name: 'resume'}">Resume</router-link>
         <router-link :to="{name: 'projects'}">Projects</router-link>
         <router-link :to="{name: 'about'}">About</router-link>
@@ -47,22 +47,10 @@ export default {
 
 <style scoped>
 
-.navbar {
-}
-
-.navbar-items {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  padding: 1.2vw 2.4vw;
- }
-
-.navbar-navlinks {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: flex-start;
-  padding: 1.2vw 2.4vw;
-  gap: 2.4vw 3.6vw;
+.active {
+  padding: 0.2rem;
+  outline: 0.2rem solid whitesmoke;
+  border-radius: 0.2rem;
 }
 
 .hidden {

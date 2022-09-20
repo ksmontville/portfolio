@@ -2,15 +2,15 @@
   <div class="bg-cover flex flex-col flex-nowrap items-center text-slate-700 p-5" style="background-image: url('/img/cta_background.jpg')">
     <p class="leading-loose text-4xl p-5">Hello, I'm Kyle!</p>
     <p class="leading-loose text-xl pb-5">Science teacher turned web developer.</p>
-    <div class="">
-      <img class="rounded-full shadow-sm shadow-black p-5" src="/img/kylemontville.jpeg" alt="Kyle Montville">
+    <div class="pb-5">
+      <img class="rounded-full shadow-sm shadow-black w-auto p-5" src="/img/kylemontville.jpeg" alt="Kyle Montville">
     </div>
   </div>
 
-  <div class="p-5">
+  <div class="text-center p-5">
     <ul role="list">
       <li class="leading-loose p-5">
-        Bringing myriad soft-skills developed during a career in teaching to the tech industry.
+        Employing myriad soft-skills developed during a career in teaching to the tech industry.
       </li>
       <li class="leading-loose p-5">
         Problem solving, collaboration, and communication are my specialties.
