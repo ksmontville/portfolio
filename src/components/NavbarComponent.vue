@@ -1,12 +1,12 @@
 <template>
-  <div class="navbar">
+  <div class="navbar bg-gradient-to-b from-slate-800 to-slate-400 text-white">
     <div class="navbar navbar-items">
       <div class="navbar navbar-logo">
         <router-link :to="{name: 'home'}">KM</router-link>
       </div>
 
       <div class="navbar navbar-toggle">
-        <button @click="toggleNav">Toggle</button>
+        <button @click="toggleNav">| | |</button>
       </div>
     </div>
 
@@ -48,8 +48,6 @@ export default {
 <style scoped>
 
 .navbar {
-   font-size: 0.8rem;
-  background-color: lightblue;
 }
 
 .navbar-items {

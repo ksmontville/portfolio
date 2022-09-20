@@ -1,6 +1,8 @@
 <template>
   <section class="footer">
-    Footer
+    <p>Text here</p>
+    <p>Contact form here</p>
+    <p>More stuff here</p>
   </section>
 </template>
 

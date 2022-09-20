@@ -3,7 +3,7 @@ import { RouterLink, RouterView } from 'vue-router'
 </script>
 
 <template>
-  <header>
+  <header class="bg-gradient-to-b from-black to-gray-700 text-white text-center">
     <PageHeader />
   </header>
 
@@ -12,10 +12,12 @@ import { RouterLink, RouterView } from 'vue-router'
   </nav>
 
   <main>
+    <div class="bg-gradient-to-b from-slate-800 to-slate-400 text-white min-h-screen">
       <RouterView />
+    </div>
   </main>
 
-  <footer>
+  <footer class="bg-gradient-to-t from-black to-gray-600 text-white text-center">
     <PageFooter />
   </footer>
 
@@ -24,7 +26,6 @@ import { RouterLink, RouterView } from 'vue-router'
 <style scoped>
 
 header {
-  background-color: blue;
   line-height: 1.5;
   max-height: 100vh;
 }
@@ -53,13 +54,11 @@ nav a:first-of-type {
 }
 
 main {
-  background-color: lightyellow;
-  min-height: 100vh;
+
 }
 
 footer {
-  background-color: green;
-  margin-top: auto;
+
 }
 
 @media (min-width: 768px) {
