@@ -7,19 +7,19 @@
     </div>
   </div>
 
-  <div class="text-center p-5">
+  <div class="text-left p-5">
     <ul role="list">
       <li class="leading-loose p-5">
-        Employing myriad soft-skills developed during a career in teaching to the technology industry.
+        <img class="inline p-2" src="/icons/caret-right.svg" alt="Carat Right">Problem solving, collaboration, and communication are my specialties.
       </li>
       <li class="leading-loose p-5">
-        Problem solving, collaboration, and communication are my specialties.
+        <img class="inline p-2" src="/icons/caret-right.svg" alt="Carat Right">Employing myriad soft-skills developed during a career in teaching to the technology industry.
       </li>
       <li class="leading-loose p-5">
-        Excited to start building your next website.
+        <img class="inline p-2" src="/icons/caret-right.svg" alt="Carat Right">Excited to start building your next website.
       </li>
       <li class="leading-loose p-5">
-        Explore this portfolio to find out more about my education, work history, projects, and personal life.
+        <img class="inline p-2" src="/icons/caret-right.svg" alt="Carat Right">Explore this portfolio to find out more about my education, work history, projects, and personal life.
       </li>
     </ul>
   </div>
