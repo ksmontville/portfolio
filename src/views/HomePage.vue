@@ -1,7 +1,7 @@
 <template>
   <div class="bg-cover flex flex-col flex-nowrap items-center text-slate-700 p-5" style="background-image: url('/img/cta_background.jpg')">
-    <p class="leading-loose text-4xl p-3">Hello, I'm Kyle!</p>
-    <p class="leading-loose text-xl pb-3">Science teacher turned web developer.</p>
+    <p class="leading-loose text-4xl p-5">Hello, I'm Kyle!</p>
+    <p class="leading-loose text-xl pb-5">Science teacher turned web developer.</p>
     <div class="">
       <img class="rounded-full shadow-sm shadow-black p-5" src="/img/kylemontville.jpeg" alt="Kyle Montville">
     </div>
