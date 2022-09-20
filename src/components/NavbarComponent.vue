@@ -1,7 +1,7 @@
 <template>
   <div class="navbar bg-gradient-to-b from-slate-800 to-slate-400 text-white">
     <div class="navbar navbar-items flex flex-row flex-nowrap justify-between p-6">
-      <div class="navbar navbar-logo text-2xl">
+      <div class="navbar navbar-logo text-xl">
         <router-link :to="{name: 'home'}">Kyle Montville</router-link>
       </div>
       <div class="navbar navbar-toggle">
