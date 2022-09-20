@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-cover flex flex-col flex-nowrap items-center text-slate-700 p-5" style="background-image: url('public/img/cta_background.jpg')">
+  <div class="bg-cover flex flex-col flex-nowrap items-center text-slate-700 p-5" style="background-image: url('/img/cta_background.jpg')">
     <h1 class="p-3">Hello, I'm Kyle!</h1>
     <h2 class="pb-3">Science teacher turned web developer.</h2>
     <div class="">
