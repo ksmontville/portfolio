@@ -1,22 +1,25 @@
 <template>
   <div class="bg-cover flex flex-col flex-nowrap items-center text-slate-700 p-5" style="background-image: url('/img/cta_background.jpg')">
-    <h1 class="p-3">Hello, I'm Kyle!</h1>
-    <h2 class="pb-3">Science teacher turned web developer.</h2>
+    <p class="leading-loose text-4xl p-3">Hello, I'm Kyle!</p>
+    <p class="leading-loose text-xl pb-3">Science teacher turned web developer.</p>
     <div class="">
-      <img class="rounded-full p-5" src="/img/kylemontville.jpeg" alt="Kyle Montville">
+      <img class="rounded-full shadow-sm shadow-black p-5" src="/img/kylemontville.jpeg" alt="Kyle Montville">
     </div>
   </div>
 
   <div class="p-5">
-    <ul>
-      <li>
+    <ul role="list">
+      <li class="leading-loose p-5">
+        Bringing myriad soft-skills developed during a career in teaching to the tech industry.
+      </li>
+      <li class="leading-loose p-5">
         Problem solving, collaboration, and communication are my specialties.
       </li>
-      <li>
+      <li class="leading-loose p-5">
         Excited to start building your next website.
       </li>
-      <li>
-        Explore this website to find out more about my education, work history, projects, and personal life.
+      <li class="leading-loose p-5">
+        Explore this portfolio to find out more about my education, work history, projects, and personal life.
       </li>
     </ul>
   </div>
