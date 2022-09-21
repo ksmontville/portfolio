@@ -47,7 +47,7 @@ export default {
         'title': "Let's Get Trivial!",
         'image': '/img/letsgettrivial.png',
         'description': 'A text-based quiz game which generates questions using Open Trivia DB. Users can select category,' +
-            'difficulty, and number of questions. Creates a locally stored leaderboard for recording high scores.',
+            ' difficulty, and number of questions. Creates a locally stored leaderboard for recording high scores.',
         'link': 'https://github.com/ksmontville/lets_get_trivial'
       },
       'snakeVsMongoose': {
