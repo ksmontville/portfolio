@@ -1,7 +1,8 @@
 <template>
-  <p class="leading-loose text-center underline text-4xl p-6 mb-6">
-    My Projects
-  </p>
+  <div class="flex flex-col flex-nowrap items-center p-6">
+    <p class="leading-loose text-4xl">Check out my work.</p>
+    <img src="/icons/arrow-down.png" alt="Down Arrow">
+  </div>
 
   <div class="flex flex-col flex-nowrap justify-center items-center">
     <ProjectCards />
