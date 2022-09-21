@@ -8,6 +8,7 @@ import HomePage from './views/HomePage.vue'
 import ResumePage from './views/ResumePage.vue'
 import ProjectsPage from './views/ProjectsPage.vue'
 import ProjectDetails from './views/ProjectDetails.vue'
+import ProjectCards from './components/ProjectCards.vue'
 import AboutMe from './views/AboutMe.vue'
 import PageFooter from './components/PageFooter.vue'
 import './index.css'
@@ -22,6 +23,7 @@ app
     .component('Resume', ResumePage)
     .component('ProjectsPage', ProjectsPage)
     .component('ProjectDetails', ProjectDetails)
+    .component('ProjectCards', ProjectCards)
     .component('AboutMe', AboutMe)
     .component('PageFooter', PageFooter)
     .mount('#app')
