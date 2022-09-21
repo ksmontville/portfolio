@@ -14,7 +14,7 @@
   </div>
 
   <div class="text-justify p-6" id="contact">
-    <p class="rounded-lg bg-gradient-to-b from-slate-900 to-slate-600 text-center text-xl underline shadow-lg shadow-white p-3">Contact</p>
+    <p class="rounded-lg bg-gradient-to-b from-slate-900 to-slate-600 text-center text-xl shadow-lg shadow-white p-3">Contact</p>
     <ul class="rounded-lg leading-loose shadow-md shadow-white p-6">
       <li><img class="inline mr-3" src="/icons/gps-icon-large.png" alt="GPS Icon" height="24" width="24">Lebanon, New Hampshire</li>
       <li><img class="inline mr-3" src="/icons/smartphone-icon-large.png" alt="Smartphone Icon" height="24" width="24">518-844-6577</li>
@@ -27,7 +27,7 @@
   </div>
 
   <div class="text-justify p-6" id="education">
-    <p class="rounded-lg bg-gradient-to-b from-slate-900 to-slate-600 text-center text-xl underline shadow-lg shadow-white p-3">Education</p>
+    <p class="rounded-lg bg-gradient-to-b from-slate-900 to-slate-600 text-center text-xl shadow-lg shadow-white p-3">Education</p>
     <ul class="rounded-lg leading-loose shadow-md shadow-white p-6">
       <li><img class="inline mr-2" src="/icons/caret-right.svg" alt="Carat Right">Clarkson University, 2016-2017</li>
         <li class="ml-5"><img class="inline mr-2" src="/icons/circle-thin.png" alt="Thin Circle">Master of Arts in Teaching</li>
@@ -40,7 +40,7 @@
   </div>
 
   <div class="text-justify p-6" id="coursework">
-    <p class="rounded-lg bg-gradient-to-b from-slate-900 to-slate-600 text-center text-xl underline shadow-lg shadow-white p-3">Relevant Coursework</p>
+    <p class="rounded-lg bg-gradient-to-b from-slate-900 to-slate-600 text-center text-xl shadow-lg shadow-white p-3">Relevant Coursework</p>
     <ul class="rounded-lg leading-loose shadow-md shadow-white p-6">
       <li><img class="inline mr-2" src="/icons/caret-right.svg" alt="Carat Right">Data Analysis and Signal Processing</li>
       <li><img class="inline mr-2" src="/icons/caret-right.svg" alt="Carat Right">Ordinary Differential Equations</li>
@@ -51,7 +51,7 @@
   </div>
 
   <div class="text-justify p-6" id="tech-stack">
-    <p class="rounded-lg bg-gradient-to-b from-slate-900 to-slate-600 text-center text-xl underline shadow-lg shadow-white p-3">Tech Stack</p>
+    <p class="rounded-lg bg-gradient-to-b from-slate-900 to-slate-600 text-center text-xl shadow-lg shadow-white p-3">Tech Stack</p>
     <ul class="rounded-lg leading-loose shadow-md shadow-white p-6">
       <li><img class="inline mr-2" src="/icons/caret-right.svg" alt="Carat Right">Python</li>
         <li class="ml-5"><img class="inline mr-2" src="/icons/circle-thin.png" alt="Thin Circle">Django</li>
@@ -78,7 +78,7 @@
   </div>
 
   <div class="text-justify p-6" id="other-work-experience">
-    <p class="rounded-lg bg-gradient-to-b from-slate-900 to-slate-600 text-center text-xl underline shadow-lg shadow-white p-3">Other Work Experience</p>
+    <p class="rounded-lg bg-gradient-to-b from-slate-900 to-slate-600 text-center text-xl shadow-lg shadow-white p-3">Other Work Experience</p>
     <ul class="rounded-lg leading-loose shadow-md shadow-white p-6">
       <li><img class="inline mr-2" src="/icons/caret-right.svg" alt="Carat Right">Science Teacher NY 7-12, NH 9-12</li>
         <li class="ml-5"><img class="inline mr-2" src="/icons/circle-thin.png" alt="Thin Circle">Lebanon High School, 2020 - 2022</li>
