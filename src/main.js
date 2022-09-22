@@ -10,6 +10,8 @@ import ProjectsPage from './views/ProjectsPage.vue'
 import ProjectDetails from './views/ProjectDetails.vue'
 import ProjectCards from './components/ProjectCards.vue'
 import AboutMe from './views/AboutMe.vue'
+import AccordionComponent from './components/AccordionComponent.vue'
+import CarouselComponent from './components/CarouselComponent.vue'
 import PageFooter from './components/PageFooter.vue'
 import './index.css'
 
@@ -25,5 +27,7 @@ app
     .component('ProjectDetails', ProjectDetails)
     .component('ProjectCards', ProjectCards)
     .component('AboutMe', AboutMe)
+    .component('AccordionComponent', AccordionComponent)
+    .component('CarouselComponent', CarouselComponent)
     .component('PageFooter', PageFooter)
     .mount('#app')
