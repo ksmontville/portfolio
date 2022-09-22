@@ -6,8 +6,11 @@
       <img class="rounded-full shadow-sm shadow-black w-auto p-5" src="/img/kylemontville.jpeg" alt="Kyle Montville">
     </div>
      <div class="flex flex-col flex-nowrap justify-center items-center mt-10 mb-10">
-    <button class="rounded-lg bg-gradient-to-b from-bg-slate-700 to bg-slate 500 border-2 border-slate-700 shadow-lg shadow-black text-white w-32 p-2"><a class="text-lg" href="https://i.ibb.co/ncVzpws/Kyle-Montville-Resume.jpg" target="_blank" download="Kyle Montville Resume">
-      <strong>Download Resume</strong></a></button>
+    <button class="rounded-lg bg-gradient-to-b from-bg-slate-700 to bg-slate 500 border-2 border-slate-700 shadow-lg shadow-black text-white w-32 p-2">
+      <a class="text-lg" href="https://i.ibb.co/WKrgDxt/Kyle-Montville-Resume.jpg" target="_blank" download="Kyle Montville Resume">
+      <strong>Download Resume</strong>
+      </a>
+    </button>
     </div>
   </div>
 
