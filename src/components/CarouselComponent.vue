@@ -32,7 +32,7 @@ export default {
     const slides = ref(
         {
           'goldenGate': {'id': 1, 'alt': 'Golden Gate Bridge', 'description': 'My wife and I in San Francisco', 'img': '/img/goldengatebridge.png'},
-          'glacierPoint': {'id': 2, 'alt': 'Glacier Point', 'description': 'Glacier Point, Yosemite National Park', 'img': '/img/glacierpoint.jpg'},
+          'glacierPoint': {'id': 2, 'alt': 'Glacier Point', 'description': 'Trip to Yosemite National Park', 'img': '/img/glacierpoint.jpg'},
           'gravelBike': {'id': 3, 'alt': 'My gravel bike', 'description': 'My favorite pass-time', 'img': '/img/bicycle.jpg'},
           'nelly': {'id': 4, 'alt': 'Nelly on her tree', 'description': 'Nelly in her tree', 'img': '/img/nelly-in-tree.jpg'},
           'moose': {'id': 5, 'alt': 'Moose in his bag', 'description': 'Moose in his bag', 'img': '/img/moose-in-bag.jpg'}

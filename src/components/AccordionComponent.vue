@@ -2,8 +2,8 @@
 
   <div class="p-3" id="accordion">
     <div :id="'accordionItem' + panel.id" v-for="panel in panels" :key="panel.id" >
-      <button class="rounded-md bg-indigo-200 w-full text-center hover:bg-indigo-300 active:bg-indigo-300 text-black text-xl p-3" :class="{active: !panel.hidden}" @click="panel.hidden = !panel.hidden">{{ panel.title }}</button>
-      <div :id="panel.id" class="bg-gray-900 block border-b-4 p-5" v-if="!panel.hidden">
+      <button class="rounded-md bg-indigo-200 w-full text-center hover:bg-indigo-300 active:bg-indigo-400 text-black text-xl mb-1 p-3" :class="{active: !panel.hidden}" @click="panel.hidden = !panel.hidden">{{ panel.title }}</button>
+      <div :id="panel.id" class="bg-gray-900 block p-6" v-if="!panel.hidden">
         <p class="leading-loose p-3">{{ panel.text }}</p>
       </div>
     </div>
@@ -19,10 +19,13 @@ export default {
 
   setup(){
 
-    const textAboutMe = 'Blurb about me.'
+    const textAboutMe = 'I am former high school science teacher and aspiring web developer looking to break into the industry. I am eager to prove that' +
+        ' I am a capable programmer and can be a valuable member of a development crew. I am always excited to learn new technologies,' +
+        ' engage in diverse development methodologies, process constructive feedback, and make meaningful contributions to a team.' +
+        ' I am currently living in Lebanon, New Hampshire with my wife and two cats! '
 
-    const textHobbies = 'My interests include cycling, skateboarding, reading, video games, ' +
-        'miniature painting, Dungeons and Dragons, and board games.'
+    const textHobbies = 'My non-work interests include cycling, skateboarding, reading, video games, ' +
+        'miniature painting, Dungeons and Dragons, board games, and cats.'
 
     const textProfessionalGoals = 'I have spent the last year or more self-studying computer science fundamentals and ' +
         'programming paradigms (specifically Python, JavaScript, HTML, CSS, and related frameworks) by leveraging my ' +
@@ -37,7 +40,7 @@ export default {
         'software engineering. Teaching is a wonderfully fulfilling job rife with emotional highs and lows. It is also' +
         ' a very stressful, energy-intensive, and often tragic profession. Ultimately, the negatives began to outweigh' +
         ' the positives and I made the decision to pursue a new career. I will always value the lessons ' +
-        ' that I learned, and the personal growth that I developed as a teacher, and hope to employ those skills in my next professional endeavor.'
+        ' that I learned, and the personal growth that I developed as a teacher, and seek to employ those skills in my next professional endeavor.'
 
     const panels = ref({
       'About Me': {id: 1, title: 'About Me', text: textAboutMe , hidden: true,},
