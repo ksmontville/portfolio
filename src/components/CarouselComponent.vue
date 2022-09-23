@@ -1,10 +1,9 @@
 <template>
-  <div class="flex flex-col justify-center items-center rounded-md">
      <Carousel :items-to-show="1" :autoplay="3000" :wrap-around="true">
         <Slide v-for="slide in slides" :key="slide.id">
-          <div class="rounded-lg flex flex-col items-center justify-center border-4">
+          <div class="rounded-full flex flex-col items-center justify-center">
             <p class="leading-loose text-lg overline">{{ slide.description }}</p>
-            <img class="rounded-lg max-h-72" :src="slide.img" :alt="slide.alt">
+            <img class="rounded-full max-h-80" :src="slide.img" :alt="slide.alt">
           </div>
         </Slide>
 
@@ -13,8 +12,6 @@
           <Pagination />
         </template>
      </Carousel>
-  </div>
-
 </template>
 
 <script>

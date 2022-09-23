@@ -1,9 +1,9 @@
 <template>
 
-  <div class="p-3" id="accordion">
+  <div class="p-4" id="accordion">
     <div :id="'accordionItem' + panel.id" v-for="panel in panels" :key="panel.id" >
-      <button class="rounded-md bg-indigo-200 w-full text-center hover:bg-indigo-300 active:bg-indigo-400 text-black text-xl mb-1 p-3" :class="{active: !panel.hidden}" @click="panel.hidden = !panel.hidden">{{ panel.title }}</button>
-      <div :id="panel.id" class="bg-gray-900 block p-6" v-if="!panel.hidden">
+      <button class="rounded-md bg-red-500 w-full text-center text-slate-200 hover:bg-red-300 active:bg-red-300 text-xl mb-1 p-4" :class="{active: !panel.hidden}" @click="panel.hidden = !panel.hidden">{{ panel.title }}</button>
+      <div :id="panel.id" class="bg-zinc-800 block p-6" v-if="!panel.hidden">
         <p class="leading-loose p-3">{{ panel.text }}</p>
       </div>
     </div>
