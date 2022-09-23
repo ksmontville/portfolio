@@ -2,13 +2,13 @@
 
   <div v-for="project in projects" :key="project.id" class="card flex flex-col bg-zinc-900 text-slate-200 rounded-lg border-2 border-red-50 w-fit lg:w-1/4">
 
-    <div class="card-img border-b-8 border-red-50 h-80 overflow-scroll">
+    <div class="card-img rounded-md border-b-8 border-red-50 h-80 overflow-y-scroll scroll-smooth">
       <p class="bg-red-400 text-center text-2xl border-b-8 border-red-50 p-4">{{ project.title }}</p>
-      <img class="m-auto w-fit" :src="project.image" alt="Project Image">
+      <img class="m-auto w-fit min-h-full" :src="project.image" alt="Project Image">
     </div>
 
     <div class="card-body rounded-lg text-slate-200 border-b-8 border-red-50">
-      <div class="rounded-md bg-zinc-700 p-2 flex flex-col items-center">
+      <div class="rounded-md bg-zinc-800 p-2 flex flex-col items-center">
         <div class="h-fit overflow-visible">
           <p class="leading-loose text-center text-xl underline p-2">Guest Credentials</p>
           <p class="leading-loose text-center mb-6"><strong>{{ project.credentials }}</strong></p>
