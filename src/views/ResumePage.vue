@@ -29,7 +29,7 @@
     </ul>
   </div>
 
-  <div class="text-justify p-3" id="education">
+  <div class="text-left p-3" id="education">
     <p class="rounded-lg text-xl underline m-6 text-center lg:text-left">Education</p>
     <ul class="rounded-lg leading-loose">
       <li><img class="inline mr-2" src="/icons/caret-right.svg" alt="Carat Right">Clarkson University, 2016-2017</li>
