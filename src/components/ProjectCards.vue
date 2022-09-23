@@ -3,8 +3,8 @@
   <div v-for="project in projects" :key="project.id" class="card flex flex-col bg-zinc-900 text-slate-200 rounded-lg border-2 border-red-50 w-fit lg:w-1/4">
 
     <div class="card-img border-b-8 border-red-50 h-80 overflow-scroll">
-      <p class="rounded-md bg-red-400 text-center text-2xl border-b-8 border-red-50 p-4">{{ project.title }}</p>
-      <img class="m-auto w-fit h-full" :src="project.image" alt="Project Image">
+      <p class="bg-red-400 text-center text-2xl border-b-8 border-red-50 p-4">{{ project.title }}</p>
+      <img class="m-auto w-fit" :src="project.image" alt="Project Image">
     </div>
 
     <div class="card-body rounded-lg text-slate-200 border-b-8 border-red-50">
