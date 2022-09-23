@@ -3,21 +3,22 @@ import { RouterLink, RouterView } from 'vue-router'
 </script>
 
 <template>
-<!--  <header class="bg-gradient-to-b from-black to-gray-700 text-white text-center">-->
+  <header class="bg-gradient-to-b from-black to-gray-700 text-white text-center">
 <!--    <PageHeader />-->
-<!--  </header>-->
+  </header>
 
   <nav>
     <NavbarComponent />
   </nav>
 
   <main>
-    <div class="bg-gradient-to-b from-slate-800 to-slate-400 text-white min-h-screen">
+    <div class="bg-zinc-700 text-slate-200 min-h-screen p-6">
       <RouterView />
     </div>
+
   </main>
 
-  <footer class="bg-gradient-to-t from-black to-gray-600 text-white text-center">
+  <footer class="bg-zinc-900 text-slate-200 text-center">
     <PageFooter />
   </footer>
 

@@ -4,7 +4,7 @@
         <Slide v-for="slide in slides" :key="slide.id">
           <div class="rounded-lg flex flex-col items-center justify-center border-4">
             <p class="leading-loose text-lg overline">{{ slide.description }}</p>
-            <img class="rounded-lg h-1/2" :src="slide.img" :alt="slide.alt">
+            <img class="rounded-lg max-h-72" :src="slide.img" :alt="slide.alt">
           </div>
         </Slide>
 
@@ -31,11 +31,11 @@ export default {
 
     const slides = ref(
         {
-          'goldenGate': {'id': 1, 'alt': 'Golden Gate Bridge', 'description': 'My wife and I in San Francisco', 'img': '/img/goldengatebridge.png'},
-          'glacierPoint': {'id': 2, 'alt': 'Glacier Point', 'description': 'Trip to Yosemite National Park', 'img': '/img/glacierpoint.jpg'},
-          'gravelBike': {'id': 3, 'alt': 'My gravel bike', 'description': 'My favorite pass-time', 'img': '/img/bicycle.jpg'},
-          'nelly': {'id': 4, 'alt': 'Nelly on her tree', 'description': 'Nelly in her tree', 'img': '/img/nelly-in-tree.jpg'},
-          'moose': {'id': 5, 'alt': 'Moose in his bag', 'description': 'Moose in his bag', 'img': '/img/moose-in-bag.jpg'}
+          'goldenGate': {'id': 1, 'alt': 'Golden Gate Bridge', 'description': 'Wife and I in San Francisco', 'img': '/img/goldengatebridge.png'},
+          'glacierPoint': {'id': 2, 'alt': 'Glacier Point', 'description': 'Visit Yosemite National Park', 'img': '/img/glacierpoint.jpg'},
+          'gravelBike': {'id': 3, 'alt': 'My gravel bike', 'description': 'Favorite pass-time', 'img': '/img/bicycle.jpg'},
+          'nelly': {'id': 4, 'alt': 'Nelly on her tree', 'description': 'Nelly in her tree :)', 'img': '/img/nelly-in-tree.jpg'},
+          'moose': {'id': 5, 'alt': 'Moose in his bag', 'description': 'Moose in his bag :)', 'img': '/img/moose-in-bag.jpg'}
         }
     )
 

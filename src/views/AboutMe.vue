@@ -9,7 +9,7 @@
   </div>
 
   <div class="flex flex-col flex-nowrap justify-center items-center p-6">
-    <p class="leading-loose text-4xl">My favorite things...</p>
+    <p class="leading-loose text-4xl">Snippets.</p>
     <div class="w-2/3">
       <CarouselComponent />
     </div>

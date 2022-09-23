@@ -1,16 +1,16 @@
 <template>
-  <div class="navbar bg-gradient-to-b from-slate-800 to-slate-400 text-white">
-    <div class="navbar navbar-items flex flex-row flex-nowrap justify-between p-6">
+  <div class="navbar bg-zinc-900 text-white pr-2 pl-2 lg:pl-12 lg:pr-12">
+    <div class="navbar navbar-items flex flex-row flex-nowrap justify-between p-2">
       <div class="navbar navbar-logo text-xl">
         <router-link :to="{name: 'home'}">Kyle Montville</router-link>
       </div>
       <div class="navbar navbar-toggle">
-        <button :class="{active: !hidden}" @click="toggleNav">| | |</button>
+        <button class="outline-red" :class="{active: !hidden}" @click="toggleNav">| | |</button>
       </div>
     </div>
 
     <div class="navbar navbar-dropdown" :class="{hidden: hidden}">
-      <div class="navbar navbar-navlinks flex flex-col flex-nowrap items-start p-4 gap-6">
+      <div class="navbar navbar-navlinks flex flex-col flex-nowrap items-start p-2 gap-6">
         <router-link :to="{name: 'home'}">Home</router-link>
         <router-link :to="{name: 'resume'}">Resume</router-link>
         <router-link :to="{name: 'projects'}">Projects</router-link>
@@ -49,7 +49,7 @@ export default {
 
 .active {
   padding: 0.2rem;
-  outline: 0.2rem solid whitesmoke;
+  outline: 0.1rem solid rgb(239, 68, 68);
   border-radius: 0.2rem;
 }
 

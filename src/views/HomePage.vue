@@ -1,40 +1,47 @@
 <template>
-  <div class="bg-cover flex flex-col flex-nowrap items-center text-slate-700 p-5" style="background-image: url('/img/cta_background.jpg')">
-    <p class="leading-loose text-5xl pt-5">Hello, I'm Kyle!</p>
-    <p class="leading-loose text-xl decoration-double overline pb-5">Science teacher turned web developer</p>
-    <div class="pt-5 pb-5">
-      <img class="rounded-full shadow-sm shadow-black w-auto p-5" src="/img/kylemontville.jpeg" alt="Kyle Montville">
+  <div class="bg-cover flex flex-col flex-nowrap items-center">
+    <p class="leading-loose text-5xl">Hello, I'm <span class="text-red-500">Kyle</span>!</p>
+    <p class="leading-loose text-lg decoration-double overline mb-6">Science teacher turned <span class="text-red-500">web developer</span></p>
+    <div class="p-6">
+      <img class="rounded-full max-w-xs sepia" src="/img/kylemontville.jpeg" alt="Kyle Montville">
     </div>
-     <div class="flex flex-col flex-nowrap justify-center items-center mt-10 mb-10">
-    <button class="rounded-lg bg-gradient-to-b from-bg-slate-700 to bg-slate 500 border-2 border-slate-700 shadow-lg shadow-black text-white w-48 p-3">
-      <a class="text-lg" href="/img/Kyle-Montville-Resume.pdf" download="Kyle-Montville-Resume">
-      <strong>Download Resume</strong>
-      </a>
-    </button>
+    <div class="flex flex-col flex-nowrap justify-center items-center">
+      <button class="rounded-md bg-red-500 w-48 p-2 m-6">
+        <a class="text-lg" href="/img/Kyle-Montville-Resume.pdf" download="Kyle-Montville-Resume">
+        <strong>Download Resume</strong>
+        </a>
+      </button>
+    </div>
+
+    <div class="mt-6 lg:mt-12">
+      <ul v-for="bullet in bulletPoints" role="list">
+        <li class="leading-loose m-4">
+          <img class="inline p-2" src="/icons/caret-right-red.svg" alt="Carat Right">{{ bullet.text }}
+        </li>
+      </ul>
     </div>
   </div>
 
-  <div class="text-left p-5">
-    <ul role="list">
-      <li class="leading-loose p-5">
-        <img class="inline p-2" src="/icons/caret-right.svg" alt="Carat Right">Problem solving, collaboration, and communication are my specialties.
-      </li>
-      <li class="leading-loose p-5">
-        <img class="inline p-2" src="/icons/caret-right.svg" alt="Carat Right">Employing myriad soft-skills developed during a career in teaching to the technology industry.
-      </li>
-      <li class="leading-loose p-5">
-        <img class="inline p-2" src="/icons/caret-right.svg" alt="Carat Right">Excited to start building your next website.
-      </li>
-      <li class="leading-loose p-5">
-        <img class="inline p-2" src="/icons/caret-right.svg" alt="Carat Right">Explore this portfolio to find out more about my education, work history, projects, and personal life.
-      </li>
-    </ul>
-  </div>
 </template>
 
 <script>
+import {ref} from "vue";
+
 export default {
-  name: "HomePage"
+  name: "HomePage",
+
+  setup() {
+
+    const bulletPoints = ref({
+      'one': {'text': 'Problem solving, collaboration, and communication are my specialties.'},
+      'two': {'text': 'Employing myriad soft-skills developed during a career in teaching to the technology industry.'},
+      'three': {'text': 'Excited to start building your next website using responsive, mobile-first design principles.'}
+    })
+
+    return {
+      bulletPoints,
+    }
+  }
 }
 </script>
 
