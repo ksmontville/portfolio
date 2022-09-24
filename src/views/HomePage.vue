@@ -1,7 +1,7 @@
 <template>
   <div class="bg-cover flex flex-col flex-nowrap items-center">
     <p class="leading-loose text-5xl">Hello, I'm <span class="text-red-500">Kyle</span>!</p>
-    <p class="leading-loose text-lg decoration-double overline mb-6">Science teacher turned <span class="text-red-500">web developer</span></p>
+    <p class="leading-loose text-lg decoration-double overline mb-6">Science teacher turned <span class="text-red-500">Web Developer</span></p>
     <div class="p-6">
       <img class="rounded-full max-w-xs sepia" src="/img/kylemontville.jpeg" alt="Kyle Montville">
     </div>
@@ -34,7 +34,7 @@ export default {
 
     const bulletPoints = ref({
       'one': {'text': 'Problem solving, collaboration, and communication are my specialties.'},
-      'two': {'text': 'Employing myriad soft-skills developed during a career in teaching to the technology industry.'},
+      'two': {'text': 'Employing leadership, inclusivity, empathy, and other soft-skills developed during a career in teaching to the technology industry.'},
       'three': {'text': 'Excited to start building your next website using responsive, mobile-first design principles.'}
     })
 

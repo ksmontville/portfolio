@@ -14,6 +14,8 @@
           <p class="leading-loose text-center mb-6"><strong>{{ project.credentials }}</strong></p>
           <p class="leading-loose text-center text-xl underline p-2">Description</p>
           <p class="leading-loose text-justify p-2">{{ project.description }}</p>
+          <p class="leading-loose text-center text-xl underline p-2">Technologies</p>
+          <p class="leading-loose text-justify p-2">{{ project.tech }}</p>
         </div>
         <form :action="project.link" method="get" target="_blank">
           <button type="submit" class="rounded-md bg-red-500 text-slate-200 text-center hover:bg-red-300 p-2 mt-12 mb-6">Show me more!</button>
@@ -37,11 +39,11 @@ export default {
       'mhDashboard': {
         'id': 1,
         'title': 'Mental Health Dashboard',
-        'image': '/img/mentalhealthdashboard.png',
+        'image': '/img/dashboard-landing-page.jpeg',
         'alt': 'Screenshot of the Mental Health Dashboard webapp.',
-        'description': 'Full-stack project to create a SPA using Vue 3 for dynamic frontend interaction, ' +
-            'and Python Django REST framework for API endpoints to serve and store user data.' +
-            ' This project is minimally functional and is a work in progress!',
+        'description': 'In-progress SPA serving dual-purpose as a repository of mental health resources, and a dashboard component' +
+            ' which allows users to track their daily mental health activities.',
+        'tech': 'Vue.js, Python Django REST, Express, Auth0 API, Bootstrap 5, Heroku',
         'link': 'https://drliza-mentalhealth.herokuapp.com/',
         'credentials': 'Username: GuestAccount, Password: !Password'
       },
@@ -50,8 +52,9 @@ export default {
         'title': 'Wedding RSVP',
         'image': '/img/weddingwebsite.png',
         'alt': 'Screenshow showing the wedding RSVP form and website.',
-        'description': 'A personal wedding website with password protection and functional RSVP form using ' +
-            'Python Django framework for storage of user data, web serving, and HTML templating with Bootstrap 5 for custom styling.',
+        'description': 'A personal wedding website with password protection, guest RSVP form, and links to travel accommodations which' +
+            ' I used to keep track of my event attendees.',
+        'tech': 'Python Django, Django Lockdown, JavaScript, Bootstrap 5, Heroku',
         'link': 'https://www.montovacelebration.com',
         'credentials': 'Password: 052723'
       },
@@ -62,6 +65,7 @@ export default {
         'alt': 'Screenshot showing the text-based interface.',
         'description': 'A text-based quiz game which generates questions using Open Trivia DB. Users can select category,' +
             ' difficulty, and number of questions. Creates a locally stored leaderboard for recording high scores.',
+        'tech': 'Python, Requests, OpenTrivia API',
         'link': 'https://github.com/ksmontville/lets_get_trivial',
         'credentials': 'No credentials needed.'
       },
@@ -73,6 +77,7 @@ export default {
         'description': 'A variation on the classic game of Snake!' +
             ' Users can choose single player mode against a cpu-controlled mongoose, or a second player can play ' +
             'using the keyboard to control the mongoose manually.',
+        'tech': 'Python',
         'link': 'https://github.com/ksmontville/snake_vs_mongoose',
         'credentials': 'No credentials needed.'
       }
