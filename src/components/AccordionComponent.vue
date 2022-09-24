@@ -2,7 +2,8 @@
 
   <div class="p-4" id="accordion">
     <div :id="'accordionItem' + panel.id" v-for="panel in panels" :key="panel.id" >
-      <button class="rounded-md bg-red-500 w-full text-center text-slate-200 hover:bg-red-300 active:bg-red-300 text-xl mb-1 p-4" :class="{active: !panel.hidden}" @click="panel.hidden = !panel.hidden">{{ panel.title }}</button>
+      <button class="rounded-md bg-red-500 w-full text-center text-slate-200 hover:bg-red-300 active:bg-red-300 text-xl mb-1 p-4"
+              :class="{active: !panel.hidden}" @click="panel.hidden = !panel.hidden">{{ panel.title }}</button>
       <div :id="panel.id" class="bg-zinc-800 block p-2" v-if="!panel.hidden">
         <p class="leading-loose p-2">{{ panel.text }}</p>
       </div>
@@ -61,13 +62,16 @@ export default {
 <style scoped>
 
 button:after {
-  content: '\02795';
-  font-size: 0.8rem;
+  color: whitesmoke;
+  content: ' + ';
+  font-size: 2rem;
   float: right;
 }
 
 .active:after {
-  content: "\2796";
+  color: whitesmoke;
+  content: ' - ';
+  font-size: 3rem;
 }
 
 </style>
