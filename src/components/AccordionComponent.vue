@@ -20,8 +20,8 @@ export default {
 
   setup(){
 
-    const textAboutMe = 'I am former high school science teacher and aspiring web developer looking to break into the industry. I am eager to prove that' +
-        ' I am a capable programmer and can be a valuable member of a development crew. I am always excited to learn new technologies,' +
+    const textAboutMe = 'I am a former high school science teacher, now web developer seeking to leverage my passion for knowledge to the technology industry. ' +
+        'I am always excited to learn new technologies,' +
         ' engage in diverse development methodologies, process constructive feedback, and make meaningful contributions to a team.' +
         ' I am currently living in Lebanon, New Hampshire with my wife and two cats! '
 
