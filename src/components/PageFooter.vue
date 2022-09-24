@@ -25,7 +25,7 @@
       </div>
 
       <div class="text-center text-xs p-3" id="copyright">
-        <p>Kyle Montville, &copy; 2022-2023</p>
+        <span>Kyle Montville, &copy; 2022-2023 -- Icons by <a class="text-red-500 underline" target="_blank" href="https://icons8.com">Icons8</a></span>
       </div>
 
     </div>

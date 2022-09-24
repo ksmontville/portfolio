@@ -6,16 +6,16 @@
       <img class="rounded-full max-w-xs sepia" src="/img/kylemontville.jpeg" alt="Kyle Montville">
     </div>
     <div class="flex flex-col flex-nowrap justify-center items-center">
-      <button class="rounded-md bg-red-500 w-48 p-2 m-6">
+      <button class="rounded-md bg-red-500 text-slate-200 text-center hover:bg-red-300 p-2 mt-12 mb-12 lg:mb-6">
         <a class="text-lg" href="/img/Kyle-Montville-Resume.pdf" download="Kyle-Montville-Resume">
-        <strong>Download Resume</strong>
+        <strong>Download R&eacute;sum&eacute;</strong>
         </a>
       </button>
     </div>
 
-    <div class="mt-6 lg:mt-12">
+    <div class=" lg:mt-12">
       <ul v-for="bullet in bulletPoints" role="list">
-        <li class="leading-loose m-4">
+        <li class="leading-loose text-lg m-4">
           <img class="inline p-2" src="/icons/caret-right-red.svg" alt="Carat Right">{{ bullet.text }}
         </li>
       </ul>
@@ -46,5 +46,9 @@ export default {
 </script>
 
 <style scoped>
+
+a:hover {
+  background-color: transparent;
+}
 
 </style>

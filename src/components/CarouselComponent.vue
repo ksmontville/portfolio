@@ -2,7 +2,7 @@
      <Carousel :items-to-show="1" :autoplay="3000" :wrap-around="true">
         <Slide v-for="slide in slides" :key="slide.id">
           <div class="rounded-full flex flex-col items-center justify-center">
-            <p class="leading-loose text-lg overline">{{ slide.description }}</p>
+            <p class="leading-loose text-lg mb-4">{{ slide.description }}</p>
             <img class="rounded-full max-h-80" :src="slide.img" :alt="slide.alt">
           </div>
         </Slide>

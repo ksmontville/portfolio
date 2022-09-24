@@ -12,7 +12,7 @@ import { RouterLink, RouterView } from 'vue-router'
   </nav>
 
   <main>
-    <div class="bg-zinc-700 text-slate-200 min-h-screen p-6">
+    <div class="bg-zinc-700 text-slate-200 min-h-screen p-2 lg:p-6">
       <RouterView />
     </div>
 
