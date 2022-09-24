@@ -64,14 +64,14 @@ export default {
 button:after {
   color: whitesmoke;
   content: ' + ';
-  font-size: 2rem;
+  font-size: 1.4rem;
   float: right;
 }
 
 .active:after {
   color: whitesmoke;
   content: ' - ';
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 </style>
