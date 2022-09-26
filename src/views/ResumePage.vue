@@ -68,8 +68,8 @@
       <li><img class="inline mr-2" src="/icons/caret-right.svg" alt="Carat Right">CSS</li>
         <li class="ml-5"><img class="inline mr-2" src="/icons/circle-thin.png" alt="Thin Circle">Bootstrap</li>
         <li class="ml-5"><img class="inline mr-2" src="/icons/circle-thin.png" alt="Thin Circle">Tailwind CSS</li>
-      <li><img class="inline mr-2" src="/icons/caret-right.svg" alt="Carat Right">PostgreSQL</li>
-      <li><img class="inline mr-2" src="/icons/caret-right.svg" alt="Carat Right">SQLite</li>
+      <li><img class="inline mr-2" src="/icons/caret-right.svg" alt="Carat Right">Figma</li>
+      <li><img class="inline mr-2" src="/icons/caret-right.svg" alt="Carat Right">SQLAlchemy</li>
       <li><img class="inline mr-2" src="/icons/caret-right.svg" alt="Carat Right">Git</li>
         <li class="ml-5"><img class="inline mr-2" src="/icons/circle-thin.png" alt="Thin Circle">GitHub CLI</li>
         <li class="ml-5"><img class="inline mr-2" src="/icons/circle-thin.png" alt="Thin Circle">Heroku CLI</li>
