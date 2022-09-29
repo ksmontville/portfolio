@@ -15,7 +15,7 @@
           <p class="leading-loose text-center text-xl underline p-2">Description</p>
           <p class="leading-loose text-justify p-2">{{ project.description }}</p>
           <p class="leading-loose text-center text-xl underline p-2">Technologies</p>
-          <p class="leading-loose text-justify p-2">{{ project.tech }}</p>
+          <p class="leading-loose text-left p-2">{{ project.tech }}</p>
         </div>
         <form :action="project.link" method="get" target="_blank">
           <button type="submit" class="rounded-md bg-red-500 text-slate-200 text-center hover:bg-red-300 p-2 mt-12 mb-6">Show me more!</button>
@@ -36,8 +36,19 @@ export default {
   setup() {
 
     const projects = ref({
-      'mhDashboard': {
+      'chopThatVeg': {
         'id': 1,
+        'title': 'Chop That Veg!',
+        'image': '/img/chop-that-veg.jpeg',
+        'alt': 'Screenshot of the the Chop That Veg! API.',
+        'description': 'A full-stack application where users can search for a vegetable by name or from a list, and the API' +
+            'will return a set of setps and useful links to review. Currently any user may add a new vegetable to the API!',
+        'tech': 'Vue.js, Flask, Marshmallow, SQLite, SQLAlchemy, Tailwind CSS, Netlifly, Heroku',
+        'link': 'https://chop-that-veg.netlify.app/',
+        'credentials': 'No credentials needed.'
+      },
+      'mhDashboard': {
+        'id': 2,
         'title': 'Mental Health Dashboard',
         'image': '/img/dashboard-landing-page.jpeg',
         'alt': 'Screenshot of the Mental Health Dashboard webapp.',
@@ -48,7 +59,7 @@ export default {
         'credentials': 'Username: GuestAccount, Password: !Password'
       },
       'weddingRSVP': {
-        'id': 2,
+        'id': 3,
         'title': 'Wedding RSVP',
         'image': '/img/weddingwebsite.png',
         'alt': 'Screenshow showing the wedding RSVP form and website.',
@@ -59,7 +70,7 @@ export default {
         'credentials': 'Password: 052723'
       },
       'letsGetTrivial': {
-        'id': 3,
+        'id': 4,
         'title': "Let's Get Trivial",
         'image': '/img/letsgettrivial.png',
         'alt': 'Screenshot showing the text-based interface.',
@@ -69,17 +80,6 @@ export default {
         'link': 'https://github.com/ksmontville/lets_get_trivial',
         'credentials': 'No credentials needed.'
       },
-      'chopThatVeg': {
-        'id': 4,
-        'title': 'Chop That Veg!',
-        'image': '/img/chop-that-veg.jpeg',
-        'alt': 'Screenshot of the the Chop That Veg! API.',
-        'description': 'A full-stack application where users can search for a vegetable by name or from a list, and the API' +
-            'will return a set of setps and useful links to review. Currently any user may add a new vegetable to the API!',
-        'tech': 'Vue.js, Flask, Marshmallow, SQLite, SQLAlchemy, Tailwind CSS, Netlifly, Heroku',
-        'link': 'https://chop-that-veg.netlify.app/',
-        'credentials': 'No credentials needed.'
-      }
     })
 
     return {
