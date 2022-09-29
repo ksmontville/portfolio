@@ -41,8 +41,8 @@ export default {
         'title': 'Chop That Veg!',
         'image': '/img/chop-that-veg.jpeg',
         'alt': 'Screenshot of the the Chop That Veg! API.',
-        'description': 'Full-stack SPA where users can search for a vegetable by name or from a list. The API' +
-            ' will return a set of steps for chopping the vegetable and useful links. Any user may add a new vegetable to the API!',
+        'description': 'Full-stack SPA where users can search for a vegetable by name or from a list. Returns' +
+            ' a procedure for chopping and useful links. Users may add new vegetables to the API.',
         'tech': 'Vue.js, Flask, Marshmallow, SQLite, SQLAlchemy, Tailwind CSS, Netlifly, Heroku',
         'link': 'https://chop-that-veg.netlify.app/',
         'credentials': 'No credentials needed.'
