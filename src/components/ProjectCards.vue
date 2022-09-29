@@ -1,6 +1,6 @@
 <template>
 
-  <div v-for="project in projects" :key="project.id" class="card flex flex-col bg-zinc-900 text-slate-200 rounded-lg border-2 border-red-50 w-fit lg:w-1/4">
+  <div v-for="project in projects" :key="project.id" class="card flex flex-col text-slate-200 rounded-lg border-2 border-red-50 w-fit lg:w-1/4">
 
     <div class="card-img rounded-md h-fit border-b-8 border-red-50 h-fit">
       <p class="bg-red-500 rounded-t-md text-center text-2xl border-b-8 border-red-50 p-4">{{ project.title }}</p>
@@ -8,7 +8,7 @@
     </div>
 
     <div class="card-body text-slate-200 border-b-8 border-red-50">
-      <div class="rounded-lg bg-zinc-800 p-2 flex flex-col items-center">
+      <div class="rounded-lg p-2 flex flex-col items-center">
         <div class="h-fit overflow-visible">
           <p class="leading-loose text-center text-xl underline p-2">Guest Credentials</p>
           <p class="leading-loose text-center mb-6"><strong>{{ project.credentials }}</strong></p>

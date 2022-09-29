@@ -25,8 +25,9 @@ import { RouterLink, RouterView } from 'vue-router'
 </template>
 
 <style scoped>
+
 main {
-  background-image: url('/img/gray-backgroundlg.jpg');
+  background-image: url('/img/black-backgroundsm.jpg');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -60,17 +61,30 @@ nav a:first-of-type {
   border: 0;
 }
 
-main {
+footer {
 
 }
 
-footer {
+@media (min-width: 500px) {
+  main {
+    background-image: url('/img/black-backgroundmd.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 
 }
 
 @media (min-width: 768px) {
   header {
     padding-right: calc(var(--section-gap) / 2);
+  }
+
+  main {
+    background-image: url('/img/black-backgroundlg.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
 }

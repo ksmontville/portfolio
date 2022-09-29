@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-zinc-800 border-4 m-auto p-2 lg:w-1/2 lg:p-6">
+  <div class="border-4 m-auto p-2 lg:w-1/2 lg:p-6">
 
 
   <div class="text-center" id="header">
