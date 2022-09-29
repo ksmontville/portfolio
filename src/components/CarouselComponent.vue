@@ -29,7 +29,7 @@ export default {
     const slides = ref(
         {
           'goldenGate': {'id': 1, 'alt': 'Golden Gate Bridge', 'description': 'Wife and I in San Francisco', 'img': '/img/goldengatebridge.png'},
-          'redCurry': {'id': 2, 'alt': 'Eating red curry ice cream', 'description': 'Eating red curry ice flavored ice cream ', 'img': '/img/red-curry-icecream.jpg'},
+          'redCurry': {'id': 2, 'alt': 'Eating red curry flavored ice cream', 'description': 'Eating red curry flavored ice cream ', 'img': '/img/red-curry-icecream.jpg'},
           'summerCamp': {'id': 3, 'alt': 'Years as a summer camp counselor', 'description': 'Years as a summer camp counselor', 'img': '/img/summer-camp.jpg'},
           'glacierPoint': {'id': 4, 'alt': 'Glacier Point', 'description': 'Visit to Yosemite National Park', 'img': '/img/glacierpoint.jpg'},
           'gravelBike': {'id': 5, 'alt': 'My gravel bike', 'description': 'Favorite pass-time', 'img': '/img/bicycle.jpg'},
