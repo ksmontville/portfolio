@@ -7,7 +7,7 @@
   </div>
 
 
-  <div class="flex flex-col flex-wrap justify-center items-center p-2">
+  <div class="flex flex-col flex-wrap justify-center items-center p-2 mb-12">
     <p class="leading-loose text-4xl mb-6">Snippets.</p>
     <div class="bg-zinc-800 rounded-lg p-4 w-full lg:w-1/3">
       <CarouselComponent />
