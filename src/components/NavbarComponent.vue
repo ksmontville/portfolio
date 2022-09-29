@@ -2,7 +2,7 @@
   <div class="navbar bg-zinc-900 text-white pr-2 pl-2 lg:pl-12 lg:pr-12">
     <div class="navbar navbar-items flex flex-row flex-nowrap justify-between items-center p-2">
       <div class="navbar navbar-logo text-xl">
-        <router-link :to="{name: 'home'}">Kyle Montville</router-link>
+        <router-link :to="{name: 'home'}" @click="hidden=true">Kyle Montville</router-link>
       </div>
       <div class="navbar navbar-toggle flex flex-row flex-nowrap">
         <button class="outline-red" :class="{active: !hidden}" @click="toggleNav">
@@ -13,10 +13,10 @@
 
     <div class="navbar navbar-dropdown" :class="{hidden: hidden}">
       <div class="navbar navbar-navlinks flex flex-col flex-nowrap items-start p-2 gap-6">
-        <router-link :to="{name: 'home'}">Home</router-link>
-        <router-link :to="{name: 'resume'}">R&eacute;sum&eacute;</router-link>
-        <router-link :to="{name: 'projects'}">Projects</router-link>
-        <router-link :to="{name: 'about'}">About</router-link>
+        <router-link :to="{name: 'home'}" @click="toggleNav">Home</router-link>
+        <router-link :to="{name: 'resume'}" @click="toggleNav">R&eacute;sum&eacute;</router-link>
+        <router-link :to="{name: 'projects'}" @click="toggleNav">Projects</router-link>
+        <router-link :to="{name: 'about'}" @click="toggleNav">About</router-link>
       </div>
     </div>
   </div>

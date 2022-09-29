@@ -4,7 +4,7 @@
     <div :id="'accordionItem' + panel.id" v-for="panel in panels" :key="panel.id" >
       <button class="rounded-md bg-red-500 w-full text-center text-slate-200 hover:bg-red-400 focus:bg-red-300 active:bg-red-300 text-xl mb-1 p-4"
               :class="{active: !panel.hidden}" @click="panel.hidden = !panel.hidden">{{ panel.title }}</button>
-      <div :id="panel.id" class="bg-zinc-800 block p-2" v-if="!panel.hidden">
+      <div :id="panel.id" class="bg-zinc-700 block p-2" v-if="!panel.hidden">
         <p class="leading-loose p-2">{{ panel.text }}</p>
       </div>
     </div>

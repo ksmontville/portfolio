@@ -13,7 +13,7 @@
       </button>
     </div>
 
-    <div class=" lg:mt-12">
+    <div class="lg:mt-12">
       <ul v-for="bullet in bulletPoints" role="list">
         <li class="leading-loose text-lg m-4">
           <img class="inline p-2" src="/icons/caret-right-red.svg" alt="Carat Right">{{ bullet.text }}
