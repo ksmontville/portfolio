@@ -29,10 +29,12 @@ export default {
     const slides = ref(
         {
           'goldenGate': {'id': 1, 'alt': 'Golden Gate Bridge', 'description': 'Wife and I in San Francisco', 'img': '/img/goldengatebridge.png'},
-          'glacierPoint': {'id': 2, 'alt': 'Glacier Point', 'description': 'Visit Yosemite National Park', 'img': '/img/glacierpoint.jpg'},
-          'gravelBike': {'id': 3, 'alt': 'My gravel bike', 'description': 'Favorite pass-time', 'img': '/img/bicycle.jpg'},
-          'nelly': {'id': 4, 'alt': 'Nelly on her tree', 'description': 'Nelly in her tree :)', 'img': '/img/nelly-in-tree.jpg'},
-          'moose': {'id': 5, 'alt': 'Moose in his bag', 'description': 'Moose in his bag :)', 'img': '/img/moose-in-bag.jpg'}
+          'redCurry': {'id': 2, 'alt': 'Eating red curry ice cream', 'description': 'Eating red curry ice flavored ice cream ', 'img': '/img/red-curry-icecream.jpg'},
+          'summerCamp': {'id': 3, 'alt': 'Years as a summer camp counselor', 'description': 'Years as a summer camp counselor', 'img': '/img/summer-camp.jpg'},
+          'glacierPoint': {'id': 4, 'alt': 'Glacier Point', 'description': 'Visit to Yosemite National Park', 'img': '/img/glacierpoint.jpg'},
+          'gravelBike': {'id': 5, 'alt': 'My gravel bike', 'description': 'Favorite pass-time', 'img': '/img/bicycle.jpg'},
+          'nelly': {'id': 6, 'alt': 'Nelly on her tree', 'description': 'Nelly in her tree :)', 'img': '/img/nelly-in-tree.jpg'},
+          'moose': {'id': 7, 'alt': 'Moose in his bag', 'description': 'Moose in his bag :)', 'img': '/img/moose-in-bag.jpg'}
         }
     )
 

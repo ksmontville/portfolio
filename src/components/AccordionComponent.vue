@@ -34,6 +34,12 @@ export default {
         'I will be relocating to California with my wife in the time frame of June, 2023 and will be seeking employment,' +
         ' either on-site, remote, or hybrid, in the Bay Area.'
 
+    const textWhyWebDev = 'I find designing and developing websites to be a zen experience. The hours slip away as I work tirelessly ' +
+        ' to bring a specific design to life, a certain functionality into reality. It is endlessly satisfactory to watch your program' +
+        ' become part of the infinitely large information conglomerate that we call the web, and to know that someone out there' +
+        ' is enjoying a piece of software that you designed just for them. I hope to be able to work on a web service that has a real' +
+        ' and measurable and positive experience on a user\'s life, even if it is only for a brief moment of their day.'
+
     const textYearsAsTeacher = 'I am a fully certified high school science teacher formerly working for a number of ' +
         'schools, both public and private. Though I remain a fervent supporter of public education ' +
         'and its important duties in developing young minds, I have recently come to understand that my true ' +
@@ -47,7 +53,8 @@ export default {
       'About Me': {id: 1, title: 'About Me', text: textAboutMe , hidden: true,},
       'Hobbies': {id: 2, title: 'Hobbies', text: textHobbies, hidden: true,},
       'Professional Goals:': {id: 3, title: 'Professional Goals', text: textProfessionalGoals, hidden: true,},
-      'Years as a Teacher': {id: 4, title: 'Years as a Teacher', text: textYearsAsTeacher, hidden: true,},
+      'Why Web Development': {id: 4, 'title': 'Why Web Development', text: textWhyWebDev, hidden:true},
+      'Years as a Teacher': {id: 5, title: 'Years as a Teacher', text: textYearsAsTeacher, hidden: true,},
     })
     const isHidden = ref(true)
 
