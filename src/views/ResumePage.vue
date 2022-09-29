@@ -59,20 +59,21 @@
       <li><img class="inline mr-2" src="/icons/caret-right.svg" alt="Carat Right">Python</li>
         <li class="ml-5"><img class="inline mr-2" src="/icons/circle-thin.png" alt="Thin Circle">Django</li>
         <li class="ml-5"><img class="inline mr-2" src="/icons/circle-thin.png" alt="Thin Circle">Flask</li>
-        <li class="ml-5"><img class="inline mr-2" src="/icons/circle-thin.png" alt="Thin Circle">Pandas</li>
+        <li class="ml-5"><img class="inline mr-2" src="/icons/circle-thin.png" alt="Thin Circle">FastAPI</li>
+        <li class="ml-5"><img class="inline mr-2" src="/icons/circle-thin.png" alt="Thin Circle">pandas</li>
       <li><img class="inline mr-2" src="/icons/caret-right.svg" alt="Carat Right">JavaScript</li>
         <li class="ml-5"><img class="inline mr-2" src="/icons/circle-thin.png" alt="Thin Circle">Vue.js</li>
         <li class="ml-5"><img class="inline mr-2" src="/icons/circle-thin.png" alt="Thin Circle">Node.js</li>
         <li class="ml-5"><img class="inline mr-2" src="/icons/circle-thin.png" alt="Thin Circle">Express</li>
       <li><img class="inline mr-2" src="/icons/caret-right.svg" alt="Carat Right">HTML</li>
       <li><img class="inline mr-2" src="/icons/caret-right.svg" alt="Carat Right">CSS</li>
-        <li class="ml-5"><img class="inline mr-2" src="/icons/circle-thin.png" alt="Thin Circle">Bootstrap</li>
+        <li class="ml-5"><img class="inline mr-2" src="/icons/circle-thin.png" alt="Thin Circle">Bootstrap 5</li>
         <li class="ml-5"><img class="inline mr-2" src="/icons/circle-thin.png" alt="Thin Circle">Tailwind CSS</li>
-      <li><img class="inline mr-2" src="/icons/caret-right.svg" alt="Carat Right">Figma</li>
       <li><img class="inline mr-2" src="/icons/caret-right.svg" alt="Carat Right">SQLAlchemy</li>
       <li><img class="inline mr-2" src="/icons/caret-right.svg" alt="Carat Right">Git</li>
         <li class="ml-5"><img class="inline mr-2" src="/icons/circle-thin.png" alt="Thin Circle">GitHub CLI</li>
         <li class="ml-5"><img class="inline mr-2" src="/icons/circle-thin.png" alt="Thin Circle">Heroku CLI</li>
+        <li class="ml-5"><img class="inline mr-2" src="/icons/circle-thin.png" alt="Thin Circle">Netlify</li>
       <li><img class="inline mr-2" src="/icons/caret-right.svg" alt="Carat Right">Linux BASH</li>
       <li><img class="inline mr-2" src="/icons/caret-right.svg" alt="Carat Right">R</li>
       <li><img class="inline mr-2" src="/icons/caret-right.svg" alt="Carat Right">MATLAB</li>
@@ -83,7 +84,7 @@
   <div class="text-justify p-3" id="other-work-experience">
     <p class="rounded-lg text-xl underline m-6 text-center lg:text-left">Other Work Experience</p>
     <ul class="rounded-lg leading-loose">
-      <li><img class="inline mr-2" src="/icons/caret-right.svg" alt="Carat Right">Science Teacher NY 7-12, NH 9-12</li>
+      <li><img class="inline mr-2" src="/icons/caret-right.svg" alt="Carat Right">Certified Science Teacher, NY 7-12 & NH 9-12</li>
         <li class="ml-5"><img class="inline mr-2" src="/icons/circle-thin.png" alt="Thin Circle">Lebanon High School, 2020 - 2022</li>
         <li class="ml-5"><img class="inline mr-2" src="/icons/circle-thin.png" alt="Thin Circle">RCS High School, 2017 - 2020</li>
         <li class="ml-5"><img class="inline mr-2" src="/icons/circle-thin.png" alt="Thin Circle">Emma Willard School, 2016-2017</li>
