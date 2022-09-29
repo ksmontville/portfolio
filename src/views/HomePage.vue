@@ -3,7 +3,7 @@
     <p class="leading-loose text-5xl">Hello, I'm <span class="text-red-500">Kyle</span>!</p>
     <p class="leading-loose text-lg decoration-double overline mb-6">Science teacher turned <span class="text-red-500">Web Developer</span></p>
     <div class="p-6">
-      <img class="rounded-full max-w-xs sepia" src="/img/kylemontville.jpeg" alt="Kyle Montville">
+      <img class="rounded-full max-w-xs" src="/img/kylemontville.jpeg" alt="Kyle Montville">
     </div>
     <div class="flex flex-col flex-nowrap justify-center items-center">
       <button class="rounded-md bg-red-500 text-slate-200 text-center hover:bg-red-300 p-2 mt-12 mb-12 lg:mb-6">

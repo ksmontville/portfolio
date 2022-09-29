@@ -12,7 +12,7 @@ import { RouterLink, RouterView } from 'vue-router'
   </nav>
 
   <main>
-    <div class="bg-zinc-700 text-slate-200 min-h-screen p-2 lg:p-6">
+    <div class="text-slate-200 min-h-screen p-2 lg:p-6">
       <RouterView />
     </div>
 
@@ -25,7 +25,12 @@ import { RouterLink, RouterView } from 'vue-router'
 </template>
 
 <style scoped>
-
+main {
+  background-image: url('/img/gray-backgroundlg.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
 header {
   line-height: 1.5;
