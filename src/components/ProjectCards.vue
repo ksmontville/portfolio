@@ -69,16 +69,15 @@ export default {
         'link': 'https://github.com/ksmontville/lets_get_trivial',
         'credentials': 'No credentials needed.'
       },
-      'snakeVsMongoose': {
+      'chopThatVeg': {
         'id': 4,
-        'title': 'Snake vs. Mongoose',
-        'image': '/img/snakevsmongoose.png',
-        'alt': 'Screenshot of the game in progress.',
-        'description': 'A variation on the classic game of Snake!' +
-            ' Users can choose single player mode against a cpu-controlled mongoose, or a second player can play ' +
-            'using the keyboard to control the mongoose manually.',
-        'tech': 'Python',
-        'link': 'https://github.com/ksmontville/snake_vs_mongoose',
+        'title': 'Chop That Veg!',
+        'image': '/img/chop-that-veg.jpeg',
+        'alt': 'Screenshot of the the Chop That Veg! API.',
+        'description': 'A full-stack application where users can search for a vegetable by name or from a list, and the API' +
+            'will return a set of setps and useful links to review. Currently any user may add a new vegetable to the API!',
+        'tech': 'Vue.js, Flask, Marshmallow, SQLite, SQLAlchemy, Tailwind CSS, Netlifly, Heroku',
+        'link': 'https://chop-that-veg.netlify.app/',
         'credentials': 'No credentials needed.'
       }
     })
