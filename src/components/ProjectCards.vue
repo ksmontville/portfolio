@@ -36,49 +36,52 @@ export default {
   setup() {
 
     const projects = ref({
-      'chopThatVeg': {
+      'openVegAPI': {
         'id': 1,
+        'title': "OpenVeg API (Prototype)",
+        'image': '/img/open-veg-api.jpeg',
+        'alt': 'Screenshot of a prototype OpenVeg API.',
+        'description': 'An API for locating vegan/vegetarian restaurants by state, city, and/or zip code. Uses FastAPI' +
+            ' for managing backend data and React for frontend searching and filtering tools. Data gathered and filtered' +
+            ' programmatically via BeautifulSoup web scraping utilities.',
+        'tech': 'React, FastAPI, BeautifulSoup, python-google-search, PostgreSQL, SQLAlchemy, Tailwind CSS',
+        'link': 'https://openveg.app',
+        'credentials': 'No credentials needed.'
+      },
+      'chopThatVeg': {
+        'id': 2,
         'title': 'Chop That Veg!',
         'image': '/img/chop-that-veg.jpeg',
         'alt': 'Screenshot of the the Chop That Veg! API.',
         'description': 'Full-stack SPA where users can search for a vegetable by name or from a list. Returns' +
-            ' a procedure for chopping and useful links. Users may add new vegetables to the API.',
+            ' a procedure for chopping and useful links. Users may add new vegetables to the API. Primarily a ' +
+            ' proof-of-concept build for a full-stack API project.',
         'tech': 'Vue.js, Flask, Marshmallow, SQLite, SQLAlchemy, Tailwind CSS, Netlify, Heroku',
         'link': 'https://chop-that-veg.netlify.app/',
         'credentials': 'No credentials needed.'
       },
       'mhDashboard': {
-        'id': 2,
+        'id': 3,
         'title': 'Mental Health Dashboard',
         'image': '/img/dashboard-landing-page.jpeg',
         'alt': 'Screenshot of the Mental Health Dashboard webapp.',
-        'description': 'In-progress SPA serving dual-purpose as a repository of mental health resources, and a dashboard component' +
-            ' which allows users to track their daily mental health activities.',
+        'description': 'A prototype web app serving as a repository of mental health resources and as a tool for' +
+            ' managing mental health. This project was built for my wife who is' +
+            ' a mental health professional, and its development is at her discretion!',
         'tech': 'Vue.js, Python Django REST, Express, Auth0 API, Bootstrap 5, Heroku',
         'link': 'https://drliza-mentalhealth.herokuapp.com/',
         'credentials': 'Username: GuestAccount, Password: !Password'
       },
       'weddingRSVP': {
-        'id': 3,
+        'id': 4,
         'title': 'Wedding RSVP',
         'image': '/img/weddingwebsite.png',
-        'alt': 'Screenshow showing the wedding RSVP form and website.',
+        'alt': 'Screenshot showing the wedding RSVP form and website.',
         'description': 'A personal wedding website with password protection, guest RSVP form, and links to travel accommodations which' +
-            ' I used to keep track of my event attendees.',
+            ' I used to keep track of my event attendees. Uses vanilla Python Django for MVT format and traditional serverside rendering.',
         'tech': 'Python Django, Django Lockdown, JavaScript, Bootstrap 5, Heroku',
         'link': 'https://www.montovacelebration.com',
         'credentials': 'Password: 052723'
-      },
-      'letsGetTrivial': {
-        'id': 4,
-        'title': "Let's Get Trivial",
-        'image': '/img/letsgettrivial.png',
-        'alt': 'Screenshot showing the text-based interface.',
-        'description': 'A text-based quiz game which generates questions using Open Trivia DB. Users can select category,' +
-            ' difficulty, and number of questions. Creates a locally stored leaderboard for recording high scores.',
-        'tech': 'Python, Requests, OpenTrivia API',
-        'link': 'https://github.com/ksmontville/lets_get_trivial',
-        'credentials': 'No credentials needed.'
       },
     })
 

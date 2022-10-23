@@ -62,6 +62,7 @@
         <li class="ml-5"><img class="inline mr-2" src="/icons/circle-thin.png" alt="Thin Circle">FastAPI</li>
         <li class="ml-5"><img class="inline mr-2" src="/icons/circle-thin.png" alt="Thin Circle">pandas</li>
       <li><img class="inline mr-2" src="/icons/caret-right.svg" alt="Carat Right">JavaScript</li>
+      <li class="ml-5"><img class="inline mr-2" src="/icons/circle-thin.png" alt="Thin Circle">React</li>
         <li class="ml-5"><img class="inline mr-2" src="/icons/circle-thin.png" alt="Thin Circle">Vue.js</li>
         <li class="ml-5"><img class="inline mr-2" src="/icons/circle-thin.png" alt="Thin Circle">Node.js</li>
         <li class="ml-5"><img class="inline mr-2" src="/icons/circle-thin.png" alt="Thin Circle">Express</li>
@@ -69,12 +70,13 @@
       <li><img class="inline mr-2" src="/icons/caret-right.svg" alt="Carat Right">CSS</li>
         <li class="ml-5"><img class="inline mr-2" src="/icons/circle-thin.png" alt="Thin Circle">Bootstrap 5</li>
         <li class="ml-5"><img class="inline mr-2" src="/icons/circle-thin.png" alt="Thin Circle">Tailwind CSS</li>
+      <li><img class="inline mr-2" src="/icons/caret-right.svg" alt="Carat Right">PostgreSQL</li>
       <li><img class="inline mr-2" src="/icons/caret-right.svg" alt="Carat Right">SQLAlchemy</li>
       <li><img class="inline mr-2" src="/icons/caret-right.svg" alt="Carat Right">Git</li>
         <li class="ml-5"><img class="inline mr-2" src="/icons/circle-thin.png" alt="Thin Circle">GitHub CLI</li>
         <li class="ml-5"><img class="inline mr-2" src="/icons/circle-thin.png" alt="Thin Circle">Heroku CLI</li>
         <li class="ml-5"><img class="inline mr-2" src="/icons/circle-thin.png" alt="Thin Circle">Netlify</li>
-      <li><img class="inline mr-2" src="/icons/caret-right.svg" alt="Carat Right">Linux BASH</li>
+      <li><img class="inline mr-2" src="/icons/caret-right.svg" alt="Carat Right">Linux Bash, psql</li>
       <li><img class="inline mr-2" src="/icons/caret-right.svg" alt="Carat Right">R</li>
       <li><img class="inline mr-2" src="/icons/caret-right.svg" alt="Carat Right">MATLAB</li>
       <li><img class="inline mr-2" src="/icons/caret-right.svg" alt="Carat Right">Mathematica</li>
