@@ -24,8 +24,10 @@
         </div>
       </div>
 
-      <div class="text-center text-xs p-3" id="copyright">
-        <span>Kyle Montville, &copy; 2022-2023 -- Icons by <a class="text-red-500 underline" target="_blank" href="https://icons8.com">Icons8</a></span>
+      <div class="flex flex-nowrap justify-center gap-6 text-xs p-3" id="copyright">
+        <p>Kyle Montville, <span class="text-red-500">&copy;2022-2023</span></p>
+        <p>Icons by <a class="text-red-500 underline" target="_blank" href="https://icons8.com">Icons8</a></p>
+        <p>Background by <a class="text-red-500 underline" target="_blank" href="https://unsplash.com/@kirp?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Andrew Kliatskyi</a></p>
       </div>
 
     </div>

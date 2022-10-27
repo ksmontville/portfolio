@@ -12,26 +12,41 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
+      meta: {
+        transition: 'fade'
+      },
       component: HomePage
     },
     {
       path: '/resume',
       name: 'resume',
+      meta: {
+        transition: 'fade'
+      },
       component: ResumePage
     },
     {
       path: '/projects',
       name: 'projects',
+      meta: {
+        transition: 'fade'
+      },
       component: ProjectsPage
     },
     {
       path: '/projects/:id',
       name: 'projectDetails',
+     meta: {
+        transition: 'fade'
+      },
       component: projectDetails
     },
     {
       path: '/about',
       name: 'about',
+      meta: {
+        transition: 'fade'
+      },
       component: AboutMe
     },
   ]

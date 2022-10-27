@@ -7,6 +7,57 @@
   font-weight: normal;
 }
 
+.fade-enter-from {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  transition: all 0.5s linear;
+}
+
+.fade-enter-to {
+  opacity: 1;
+}
+
+.fade-leave-from {
+  opacity: 1;
+}
+
+.fade-leave-active {
+  transition: all 0.5s linear;
+}
+
+.fade-leave-to {
+  opacity: 0;
+}
+
+.slide-enter-from {
+  height: 0;
+  opacity: 0;
+}
+.slide-enter-active {
+   transition: all 300ms ease-in-out;
+}
+.slide-enter-to {
+  height: 12rem;
+  opacity: 1;
+}
+
+.slide-leave-from {
+  height: 12rem;
+  opacity: 1;
+}
+
+.slide-leave-to {
+  height: 0;
+  opacity: 0;
+}
+
+.slide-leave-active {
+  transition: all 300ms ease-in-out;
+}
+
+
 a,
 .green {
   text-decoration: none;

@@ -3,7 +3,7 @@ import { RouterLink, RouterView } from 'vue-router'
 </script>
 
 <template>
-  <header class="bg-gradient-to-b from-black to-gray-700 text-white text-center">
+  <header class="bg-red-500 text-white text-center">
 <!--    <PageHeader />-->
   </header>
 
@@ -25,6 +25,7 @@ import { RouterLink, RouterView } from 'vue-router'
 </template>
 
 <style scoped>
+
 
 main {
   background-image: url('/img/black-backgroundsm.jpg');

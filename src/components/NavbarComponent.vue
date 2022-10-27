@@ -1,24 +1,44 @@
 <template>
-  <div class="navbar bg-zinc-900 text-white pr-2 pl-2 lg:pl-12 lg:pr-12">
-    <div class="navbar navbar-items flex flex-row flex-nowrap justify-between items-center p-2">
-      <div class="navbar navbar-logo text-xl">
-        <router-link :to="{name: 'home'}" @click="hidden=true">Kyle Montville</router-link>
+  <div class="navbar bg-zinc-900 opacity-90 text-white pr-2 pl-2 lg:pl-12 lg:pr-12">
+    <div class="navbar-items flex flex-row flex-nowrap justify-between items-center p-2">
+      <div class="navbar-logo text-xl">
+        <router-link :to="{name: 'home'}" @click="isHidden=true">
+          <span class="font-mono">{ </span>
+          <span class="font-mono text-lg text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-orange-500via-yellow-500 via-green-500 to-violet-500">Kyle Montville</span>
+          <span class="font-mono"> }</span>
+        </router-link>
       </div>
       <div class="navbar navbar-toggle flex flex-row flex-nowrap">
-        <button class="outline-red" :class="{active: !hidden}" @click="toggleNav">
+        <button class="outline-red" :class="{active: !isHidden}" @click="toggleNav">
           <img class="" src="/icons/menu-icon.png" alt="Menu Nav">
         </button>
       </div>
     </div>
 
-    <div class="navbar navbar-dropdown" :class="{hidden: hidden}">
-      <div class="navbar navbar-navlinks flex flex-col flex-nowrap items-start p-2 gap-6">
-        <router-link :to="{name: 'home'}" @click="toggleNav">Home</router-link>
-        <router-link :to="{name: 'resume'}" @click="toggleNav">R&eacute;sum&eacute;</router-link>
-        <router-link :to="{name: 'projects'}" @click="toggleNav">Projects</router-link>
-        <router-link :to="{name: 'about'}" @click="toggleNav">About</router-link>
+
+<!--  Mobile navbar -->
+    <Transition v-if="!isDesktop" name="slide">
+      <div v-show="!isHidden" class="navbar-dropdown">
+        <div class="navbar-navlinks flex flex-col flex-nowrap items-start p-2 gap-6">
+          <router-link :to="{name: 'home'}" @click="toggleNav">Home</router-link>
+          <router-link :to="{name: 'resume'}" @click="toggleNav">R&eacute;sum&eacute;</router-link>
+          <router-link :to="{name: 'projects'}" @click="toggleNav">Projects</router-link>
+          <router-link :to="{name: 'about'}" @click="toggleNav">About</router-link>
+        </div>
       </div>
-    </div>
+    </Transition>
+
+<!--    Desktop navbar-->
+    <div v-else class="navbar-dropdown">
+        <div class="navbar-navlinks flex flex-col flex-nowrap items-start p-2 gap-6">
+          <router-link :to="{name: 'home'}" @click="toggleNav">Home</router-link>
+          <router-link :to="{name: 'resume'}" @click="toggleNav">R&eacute;sum&eacute;</router-link>
+          <router-link :to="{name: 'projects'}" @click="toggleNav">Projects</router-link>
+          <router-link :to="{name: 'about'}" @click="toggleNav">About</router-link>
+        </div>
+      </div>
+
+
   </div>
 </template>
 
@@ -30,15 +50,15 @@ export default {
 
   setup() {
 
-    const hidden = ref(true)
-
+    const isHidden = ref(true)
+    const isDesktop = ref(window.innerWidth >= 768)
 
     function toggleNav() {
-      hidden.value = !hidden.value
+      isHidden.value = !isHidden.value
     }
 
     return {
-      hidden,
+      isHidden, isDesktop,
       toggleNav,
     }
 
@@ -53,10 +73,7 @@ export default {
   padding: 0.1rem;
   outline: 0.1rem solid whitesmoke;
   border-radius: 2rem;
-}
 
-.hidden {
-  display: none;
 }
 
 @media (min-width: 768px) {
@@ -69,6 +86,9 @@ export default {
 
   }
 
+  .navbar-dropdown {
+  }
+
   .navbar-navlinks {
     display: flex;
     flex-flow: row nowrap;
@@ -79,8 +99,8 @@ export default {
     display: none;
   }
 
-  .hidden {
-    display: flex;
+  .isVisible {
+    visibility: visible;
   }
 
 }
