@@ -38,10 +38,10 @@ export default {
     const projects = ref({
       'openVegAPI': {
         'id': 1,
-        'title': "OpenVeg API (Prototype)",
-        'image': '/img/open-veg-api.jpeg',
+        'title': "OpenVeg API",
+        'image': '/img/openveg-api.png',
         'alt': 'Screenshot of a prototype OpenVeg API.',
-        'description': 'An API for locating vegan/vegetarian restaurants by state, city, and/or zip code. Uses FastAPI' +
+        'description': 'Prototype API for locating vegan/vegetarian restaurants by state, city, and/or zip code. Uses FastAPI' +
             ' for managing backend data and React for frontend searching and filtering tools. Data gathered and filtered' +
             ' programmatically via BeautifulSoup web scraping utilities.',
         'tech': 'React, FastAPI, BeautifulSoup, python-google-search, PostgreSQL, SQLAlchemy, Tailwind CSS',
@@ -62,7 +62,7 @@ export default {
       },
       'mhDashboard': {
         'id': 3,
-        'title': 'Mental Health Dashboard',
+        'title': "Dr. Liza's Website",
         'image': '/img/dashboard-landing-page.jpeg',
         'alt': 'Screenshot of the Mental Health Dashboard webapp.',
         'description': 'A prototype web app serving as a repository of mental health resources and as a tool for' +
