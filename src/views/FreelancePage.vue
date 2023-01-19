@@ -8,7 +8,7 @@
 
     <div class="flex flex-col gap-4 mb-8" id="">
       <p class="text-4xl text-center font-bold leading-loose">Black Moon Games</p>
-      <p class="text-lg italic text-center leading-loose text-red-500">Small Business Website with Custom CMS</p>
+      <p class="text-lg italic text-center leading-loose text-red-500">Small Business Website with Dynamic Events Calendar and Custom CMS</p>
       <div class="">
         <CarouselComponentFreelanceBMG />
       </div>
