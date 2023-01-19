@@ -61,10 +61,10 @@ export default {
 
     const slides = ref(
         {
-          'landingPage': {'id': 1, 'alt': 'Black Moon Games Landing Page', 'description': 'Landing page with content editable by admin.', 'img': '/img/bmg-landing-page-sm'},
-          'productCarousel': {'id': 2, 'alt': 'Black Moon Games Product Carousel', 'description': 'Carousel for displaying new products, with links to their external store page.', 'img': '/img/bmg-carousel-sm'},
-          'eventCalendar': {'id': 3, 'alt': 'Black Moon Games Event Calendar', 'description': 'Dynamic events calendar synced with Google Calendar.', 'img': '/img/bmg-event-calendar-sm'},
-          'adminPage': {'id': 4, 'alt': 'Black Moon Games Admin Dashboard', 'description': 'Custom content management system using Django Wagtail.', 'img': '/img/bmg-admin-dashboard-sm'},
+          'landingPage': {'id': 1, 'alt': 'Black Moon Games Landing Page', 'description': 'Landing page with content editable by admin.', 'img': '/img/bmg-landing-page-sm.jpg'},
+          'productCarousel': {'id': 2, 'alt': 'Black Moon Games Product Carousel', 'description': 'Carousel for displaying new products, with links to their external store page.', 'img': '/img/bmg-carousel-sm.jpg'},
+          'eventCalendar': {'id': 3, 'alt': 'Black Moon Games Event Calendar', 'description': 'Dynamic events calendar synced with Google Calendar.', 'img': '/img/bmg-event-calendar-sm.jpg'},
+          'adminPage': {'id': 4, 'alt': 'Black Moon Games Admin Dashboard', 'description': 'Custom content management system using Django Wagtail.', 'img': '/img/bmg-admin-dashboard-sm.jpg'},
         }
     )
 
