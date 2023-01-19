@@ -1,17 +1,17 @@
 <template>
   <div class="flex flex-col items-center justify-center gap-2 mb-8">
-    <p class="leading-loose text-4xl">Freelance Projects</p>
-    <p class="leading-loose text-red-500 text-2xl">Examples of my paid work.</p>
+    <p class="text-center leading-loose text-4xl">Freelance Web Development</p>
+    <p class="text-center leading-loose text-2xl">Examples of my <span class="text-red-500">paid</span> work.</p>
   </div>
 
-  <div class="flex flex-row flex-wrap items-start justify-center gap-8 p-2 pt-8 pb-8 mb-12 border-t-4 border-b-4" id="container">
+  <div class="flex flex-row flex-wrap items-start justify-center gap-8 p-2 pt-8 pb-8 mb-12 border-t-2 border-b-2" id="container">
 
-    <div class="flex flex-col items-center justify-center gap-4 mb-4" id="topLeft">
+    <div class="self-center flex flex-col items-center justify-center gap-4 mb-8" id="topLeft">
       <p class="text-4xl text-center font-bold leading-loose">Black Moon Games</p>
-      <button class="bg-red-500 w-1/2 rounded-md p-2 hover:border-2 hover:border-white" @click="handleClick">Live Site</button>
+      <button class="bg-red-500 w-1/2 rounded-md p-2 hover:bg-red-300" @click="handleClick">Live Site</button>
     </div>
 
-    <div class="flex-1" id="middle">
+    <div class="flex-1 mb-8" id="middle">
       <ul class="flex flex-col gap-4 leading-loose">
         <li>
           <img class="inline p-2" src="/icons/caret-right-red.svg" alt="Carat Right">

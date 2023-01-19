@@ -1,30 +1,30 @@
 <template>
 
-  <div v-for="project in projects" :key="project.id" class="card flex flex-col text-slate-200 rounded-lg border-2 border-red-50 w-fit lg:w-1/4">
+  <div class="flex flex-row flex-wrap justify-center gap-8 mb-8 mt-8">
+    <div v-for="project in projects" :key="project.id" class="md:flex-1 card flex flex-col text-slate-200 rounded-lg border-2 border-red-50">
 
-    <div class="card-img rounded-md h-fit border-b-8 border-red-50 h-fit">
-      <p class="bg-red-500 rounded-t-md text-center text-2xl border-b-8 border-red-50 p-4">{{ project.title }}</p>
-      <img class="m-auto aspect-square" :src="project.image" :alt="project.alt">
-    </div>
+      <div class="flex-1 flex flex-col items-stretch justify-center card-img rounded-md border-b-8 border-red-50">
+        <p class="bg-red-500 rounded-t-md text-center text-2xl border-b-8 border-red-50 p-4">{{ project.title }}</p>
+        <img class="flex-auto" :src="project.image" :alt="project.alt">
+      </div>
 
-    <div class="card-body text-slate-200 border-b-8 border-red-50">
-      <div class="rounded-lg p-2 flex flex-col items-center">
-        <div class="h-fit overflow-visible">
-          <p class="leading-loose text-center text-xl underline p-2">Guest Credentials</p>
-          <p class="leading-loose text-center mb-6"><strong>{{ project.credentials }}</strong></p>
-          <p class="leading-loose text-center text-xl underline p-2">Description</p>
-          <p class="leading-loose text-justify p-2">{{ project.description }}</p>
-          <p class="leading-loose text-center text-xl underline p-2">Technologies</p>
-          <p class="leading-loose text-left p-2">{{ project.tech }}</p>
+      <div class="flex-1 card-body text-slate-200 border-b-8 border-red-50">
+        <div class="rounded-lg p-2 flex flex-col items-center">
+          <div class="flex-1">
+            <p class="leading-loose text-center text-xl underline p-2">Guest Credentials</p>
+            <p class="leading-loose text-center mb-6"><strong>{{ project.credentials }}</strong></p>
+            <p class="leading-loose text-center text-xl underline p-2">Description</p>
+            <p class="leading-loose text-justify p-2">{{ project.description }}</p>
+            <p class="leading-loose text-center text-xl underline p-2">Technologies</p>
+            <p class="leading-loose text-left p-2">{{ project.tech }}</p>
+          </div>
+          <form class="mt-16 mb-8" :action="project.link" method="get" target="_blank">
+            <button type="submit" class="rounded-md bg-red-500 text-slate-200 text-center hover:bg-red-300 p-2">Show me more!</button>
+          </form>
         </div>
-        <form :action="project.link" method="get" target="_blank">
-          <button type="submit" class="rounded-md bg-red-500 text-slate-200 text-center hover:bg-red-300 p-2 mt-12 mb-6">Show me more!</button>
-        </form>
       </div>
     </div>
-
-  </div>
-
+</div>
 </template>
 
 <script>
@@ -62,12 +62,11 @@ export default {
       },
       'mhDashboard': {
         'id': 3,
-        'title': "Dr. Liza's Website",
-        'image': '/img/dashboard-landing-page.jpeg',
+        'title': "Mental Health Tracker",
+        'image': '/img/mentalhealthdashboard.png',
         'alt': 'Screenshot of the Mental Health Dashboard webapp.',
         'description': 'A prototype web app serving as a repository of mental health resources and as a tool for' +
-            ' managing mental health. This project was built for my wife who is' +
-            ' a mental health professional, and its development is at her discretion!',
+            ' managing mental health. Currently includes a TODO and drawing board app. Work in progress!',
         'tech': 'Vue.js, Python Django REST, Express, Auth0 API, Bootstrap 5, Heroku',
         'link': 'https://drliza-mentalhealth.herokuapp.com/',
         'credentials': 'Username: GuestAccount, Password: !Password'

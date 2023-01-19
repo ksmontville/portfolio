@@ -26,15 +26,15 @@ export default {
     const textAboutMe = 'I am a former high school science teacher, now web developer seeking to leverage my passion for knowledge to the technology industry. ' +
         'I am always excited to learn new technologies,' +
         ' engage in diverse development methodologies, process constructive feedback, and make meaningful contributions to a team.' +
-        ' I am currently living in Lebanon, New Hampshire with my wife and two cats! '
+        ' I am currently living between Lebanon, New Hampshire and San Francisco, California with my wife and two cats! '
 
     const textHobbies = 'My non-work interests include cycling, skateboarding, reading, video games, ' +
-        'miniature painting, Dungeons and Dragons, board games, and cats.'
+        'miniature painting, Warhammer, Dungeons and Dragons, board games, and cats.'
 
-    const textProfessionalGoals = 'I have spent the last year or more self-studying computer science fundamentals and ' +
+    const textProfessionalGoals = 'I have spent the last two years self-studying computer science fundamentals and ' +
         'programming paradigms (specifically Python, JavaScript, HTML, CSS, and related frameworks) by leveraging my ' +
         'problem solving and analytical skills developed during my undergraduate education in physics and mathematics. ' +
-        'I will be relocating to California with my wife in the time frame of June, 2023 and will be seeking employment,' +
+        'I will be permanently relocating to San Francisco, California with my wife in the time frame of June, 2023 and will be seeking employment,' +
         ' either on-site, remote, or hybrid, in the Bay Area.'
 
     const textWhyWebDev = 'I find designing and developing websites to be a zen experience. The hours slip away as I work tirelessly ' +

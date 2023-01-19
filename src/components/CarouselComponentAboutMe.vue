@@ -2,7 +2,7 @@
      <Carousel :items-to-show="1" :autoplay="3000" :wrap-around="true">
         <Slide v-for="slide in slides" :key="slide.id">
           <div class="rounded-full flex flex-col items-center justify-center">
-            <p class="leading-loose text-lg mb-2">{{ slide.description }}</p>
+            <p class="leading-loose mb-2">{{ slide.description }}</p>
             <img class="rounded-lg max-h-80" :src="slide.img" :alt="slide.alt">
           </div>
         </Slide>
@@ -27,7 +27,7 @@ export default {
 
     const slides = ref(
         {
-          'goldenGate': {'id': 1, 'alt': 'Golden Gate Bridge', 'description': 'Wife and I in San Francisco', 'img': '/img/goldengatebridge.png'},
+          'goldenGate': {'id': 1, 'alt': 'Golden Gate Bridge', 'description': 'On a bike tour of San Francisco', 'img': '/img/goldengatebridge.png'},
           'redCurry': {'id': 2, 'alt': 'Eating red curry flavored ice cream', 'description': 'Eating red curry flavored ice cream ', 'img': '/img/red-curry-icecream.jpg'},
           'summerCamp': {'id': 3, 'alt': 'Years as a summer camp counselor', 'description': 'Years as a summer camp counselor', 'img': '/img/summer-camp.jpg'},
           'glacierPoint': {'id': 4, 'alt': 'Glacier Point', 'description': 'Visit to Yosemite National Park', 'img': '/img/glacierpoint.jpg'},
