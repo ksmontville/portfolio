@@ -27,7 +27,7 @@
           <img class="inline p-2" src="/icons/caret-right-red.svg" alt="Carat Right">
           Includes a custom content management system using Django Wagtail CMS. The admin user can edit numerous rich text fields
           on the website including the hero section, add events, descriptions, and timeframes to the event calendar, upload images to a carousel,
-          and add links to various sections of their online store page, and more.
+          add links to various sections of their online store page, and more.
         </li>
         <li>
           <img class="inline p-2" src="/icons/caret-right-red.svg" alt="Carat Right">
