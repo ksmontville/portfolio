@@ -1,25 +1,25 @@
 <template>
 
-  <div class="flex flex-row flex-wrap justify-center gap-8 mb-8 mt-8">
-    <div v-for="project in projects" :key="project.id" class="md:flex-1 card flex flex-col text-slate-200 rounded-lg border-2 border-red-50">
+  <div class="flex flex-col flex-wrap justify-center gap-8">
+    <div v-for="project in projects" :key="project.id" class="card flex flex-col lg:flex-row text-slate-200 rounded-l-lg border-2 border-red-50">
 
-      <div class="flex-1 flex flex-col items-stretch justify-center card-img rounded-md border-b-8 border-red-50">
-        <p class="bg-red-500 rounded-t-md text-center text-2xl border-b-8 border-red-50 p-4">{{ project.title }}</p>
-        <img class="flex-auto" :src="project.image" :alt="project.alt">
+      <div class="flex-1 flex flex-col items-stretch justify-center card-img rounded-l-md border-b-8 border-r-4 border-red-50">
+        <p class="bg-red-500 rounded-l-lg text-center text-2xl border-b-8 border-red-50 p-4">{{ project.title }}</p>
+        <img class="flex-1 hover:border-4 hover:border-red-900" :src="project.image" :alt="project.alt" @click="openImage(project.image)">
       </div>
 
-      <div class="flex-1 card-body text-slate-200 border-b-8 border-red-50">
+      <div class="flex-1 card-body text-slate-200 border-b-8 border-red-50 md:p-4">
         <div class="rounded-lg p-2 flex flex-col items-center">
           <div class="flex-1">
             <p class="leading-loose text-center text-xl underline p-2">Guest Credentials</p>
-            <p class="leading-loose text-center mb-6"><strong>{{ project.credentials }}</strong></p>
+            <p class="leading-loose text-center text-lg mb-6"><strong>{{ project.credentials }}</strong></p>
             <p class="leading-loose text-center text-xl underline p-2">Description</p>
-            <p class="leading-loose text-justify p-2">{{ project.description }}</p>
+            <p class="leading-loose text-justify text-lg p-2">{{ project.description }}</p>
             <p class="leading-loose text-center text-xl underline p-2">Technologies</p>
-            <p class="leading-loose text-left p-2">{{ project.tech }}</p>
+            <p class="leading-loose text-left text-lg p-2">{{ project.tech }}</p>
           </div>
           <form class="mt-16 mb-8" :action="project.link" method="get" target="_blank">
-            <button type="submit" class="rounded-md bg-red-500 text-slate-200 text-center hover:bg-red-300 p-2">Show me more!</button>
+            <button type="submit" class="rounded-md bg-red-500 text-slate-200 text-center hover:bg-red-300 p-4">Show me more!</button>
           </form>
         </div>
       </div>
@@ -46,7 +46,7 @@ export default {
             ' programmatically via BeautifulSoup web scraping utilities.',
         'tech': 'React, FastAPI, BeautifulSoup, python-google-search, PostgreSQL, SQLAlchemy, Tailwind CSS',
         'link': 'https://openveg.app',
-        'credentials': 'No credentials needed.'
+        'credentials': '[ No credentials needed ]'
       },
       'chopThatVeg': {
         'id': 2,
@@ -58,7 +58,7 @@ export default {
             ' proof-of-concept build for a full-stack API project.',
         'tech': 'Vue.js, Flask, Marshmallow, SQLite, SQLAlchemy, Tailwind CSS, Netlify, Heroku',
         'link': 'https://chop-that-veg.netlify.app/',
-        'credentials': 'No credentials needed.'
+        'credentials': '[ No credentials needed ]'
       },
       'mhDashboard': {
         'id': 3,
@@ -69,7 +69,7 @@ export default {
             ' managing mental health. Currently includes a TODO and drawing board app. Work in progress!',
         'tech': 'Vue.js, Python Django REST, Express, Auth0 API, Bootstrap 5, Heroku',
         'link': 'https://drliza-mentalhealth.herokuapp.com/',
-        'credentials': 'Username: GuestAccount, Password: !Password'
+        'credentials': '[ Username: GuestAccount ]::[ Password: !Password ]'
       },
       'weddingRSVP': {
         'id': 4,
@@ -80,12 +80,17 @@ export default {
             ' I used to keep track of my event attendees. Uses vanilla Python Django for MVT format and traditional serverside rendering.',
         'tech': 'Python Django, Django Lockdown, JavaScript, Bootstrap 5, Heroku',
         'link': 'https://www.montovacelebration.com',
-        'credentials': 'Password: 052723'
+        'credentials': '[ Password: 052723 ]'
       },
     })
 
+    const openImage = (imgSrc) => {
+      window.open(imgSrc)
+    }
+
     return {
       projects,
+      openImage,
     }
   }
 }

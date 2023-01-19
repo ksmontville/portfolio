@@ -1,10 +1,10 @@
 <template>
-  <div class="">
-     <Carousel :items-to-show="1" :autoplay="3000" :wrap-around="true">
+  <div v-if="isDesktop">
+     <Carousel :items-to-show="2" :autoplay="3000" :wrap-around="true">
         <Slide v-for="slide in slides" :key="slide.id">
           <div class="">
             <p class="p-2 text-sm leading-loose">{{ slide.description }}</p>
-            <img class="rounded-md h-full w-full" :src="slide.img" :alt="slide.alt">
+            <img class="rounded-md h-full w-full hover:border-4 hover:border-red-900" :src="slide.img" :alt="slide.alt" @click="openImage(slide.img)">
           </div>
         </Slide>
 
@@ -13,12 +13,28 @@
         </template>
      </Carousel>
   </div>
+
+  <div v-else>
+     <Carousel :items-to-show="1" :autoplay="3000" :wrap-around="true">
+        <Slide v-for="slide in slides" :key="slide.id">
+          <div class="">
+            <p class="p-2 text-sm leading-loose">{{ slide.description }}</p>
+            <img class="rounded-md h-full w-full hover:border-4 hover:border-red-900" :src="slide.img" :alt="slide.alt" @click="openImage(slide.img)">
+          </div>
+        </Slide>
+
+        <template #addons>
+          <Navigation />
+        </template>
+     </Carousel>
+  </div>
+
 </template>
 
 <script>
 import 'vue3-carousel/dist/carousel.css'
 import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
-import {ref} from "vue";
+import {onMounted, onUnmounted, ref, watch} from "vue";
 export default {
   name: "CarouselComponent",
   components: {
@@ -26,6 +42,22 @@ export default {
   },
 
   setup() {
+
+    const isDesktop = ref(window.innerWidth >= 768)
+    const windowWidth = ref(null)
+
+    const onWidthChange = () => windowWidth.value = window.innerWidth
+      onMounted(() => window.addEventListener('resize', onWidthChange))
+      onUnmounted(() => window.removeEventListener('resize', onWidthChange))
+
+    watch(windowWidth, () => {
+      windowWidth.value = window.innerWidth
+      isDesktop.value = windowWidth.value >= 768;
+})
+
+     const openImage = (imgSrc) => {
+      window.open(imgSrc)
+    }
 
     const slides = ref(
         {
@@ -37,7 +69,8 @@ export default {
     )
 
     return {
-      slides
+      openImage,
+      slides, isDesktop, windowWidth
     }
   }
 

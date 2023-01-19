@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col flex-nowrap items-center mb-8 p-2 border-b-2">
     <p class="leading-loose text-4xl mb-6">A bit about me!</p>
-    <div class="rounded-lg p-4 w-full lg:w-1/3">
+    <div class="rounded-lg p-4 w-full lg:w-2/3">
         <AccordionComponent />
     </div>
   </div>

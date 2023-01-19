@@ -1,11 +1,11 @@
 <template>
   <div class="flex flex-row flex-wrap items-baseline justify-center p-4 mt-4 mb-12">
 
-    <div class="self-center text-center flex-1 bg-cover flex flex-col flex-nowrap items-center">
+    <div class="text-center flex-1 bg-cover flex flex-col flex-nowrap items-center">
       <p class="leading-loose text-5xl lg:text-6xl">Hello, I'm <span class="text-red-500">Kyle</span>!</p>
       <p class="leading-loose text-xl decoration-double overline mb-6">Science teacher turned <span class="text-red-500">Web Developer</span></p>
       <div class="p-6">
-        <img class="rounded-full max-w-xs gra" src="/img/kylemontville.jpeg" alt="Kyle Montville">
+        <img class="rounded-full max-w-xs hover:border-4 hover:border-red-900" src="/img/kylemontville.jpeg" alt="Kyle Montville" @click="openImage('/img/kylemontville.jpeg')">
       </div>
 
       <div class="flex flex-col flex-nowrap justify-center items-center border-b-2 mb-16">
@@ -19,7 +19,7 @@
 
     <div class="flex-1 flex flex-col gap-8 justify-center">
 
-      <div class="container flex flex-col gap-8 border-b-2">
+      <div class="container flex flex-col gap-4 border-b-2">
         <p class="text-center leading-loose text-4xl">Why Hire <span class="text-red-500">Me</span>?</p>
         <ul v-for="bullet in bulletPointsTop" role="list" class="mb-4">
           <li class="leading-loose text-lg">
@@ -28,7 +28,7 @@
         </ul>
       </div>
 
-      <div class="container flex flex-col gap-8 border-b-2">
+      <div class="container flex flex-col gap-4 border-b-2">
         <p class="text-center leading-loose text-4xl mt-8">At a <span class="text-red-500">Glance</span>:</p>
         <ul v-for="bullet in bulletPointsBot" role="list" class="mb-4">
           <li class="leading-loose text-lg">
@@ -50,6 +50,10 @@ export default {
 
   setup() {
 
+    const openImage = (imgSrc) => {
+      window.open(imgSrc)
+    }
+
     const bulletPointsTop = ref({
       'one': {'text': 'Full-stack web developer building small to medium-sized responsive, high speed, custom-made,' +
             ' user friendly business websites in which clients require the ability to frequently modify page content and' +
@@ -68,6 +72,7 @@ export default {
     })
 
     return {
+      openImage,
       bulletPointsTop, bulletPointsBot
     }
   }
