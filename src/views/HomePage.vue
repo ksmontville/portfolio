@@ -33,9 +33,12 @@ export default {
   setup() {
 
     const bulletPoints = ref({
-      'one': {'text': 'Specializes in problem solving, collaboration, and communication.'},
-      'two': {'text': 'Employs leadership, inclusivity, empathy, and other soft-skills developed during a career in teaching to the technology industry.'},
-      'three': {'text': 'Excited to start building your next website using responsive, mobile-first design principles.'}
+      'one': {'text': 'Full-stack web developer building small to medium-sized responsive, high speed, custom-made,' +
+            ' user friendly business websites in which clients require the ability to frequently modify page content and' +
+            ' rank highly in Google Search queries.'},
+      'two': {'text': 'Specializes in problem solving, collaboration, and communication.'},
+      'three': {'text': 'Employs leadership, inclusivity, empathy, and other soft-skills developed during a career in teaching to the technology industry.'},
+      'four': {'text': 'Excited to start building your next and to generate value for your company.'}
     })
 
     return {

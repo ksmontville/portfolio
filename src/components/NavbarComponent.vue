@@ -1,6 +1,6 @@
 <template>
-  <div class="navbar bg-zinc-900 opacity-90 text-white pr-2 pl-2 lg:pl-12 lg:pr-12">
-    <div class="navbar-items flex flex-row flex-nowrap justify-between items-center p-2">
+  <div class="navbar bg-zinc-900 opacity-65 text-white pr-2 pl-2 lg:pl-12 lg:pr-12">
+    <div class="navbar-items flex flex-row flex-nowrap justify-between items-center p-4">
       <div class="navbar-logo text-xl">
         <router-link :to="{name: 'home'}" @click="isHidden=true">
           <span class="font-mono">{ </span>
@@ -19,9 +19,9 @@
 <!--  Mobile navbar -->
     <Transition v-if="!isDesktop" name="slide">
       <div v-show="!isHidden" class="navbar-dropdown">
-        <div class="navbar-navlinks flex flex-col flex-nowrap items-start p-2 gap-6">
+        <div class="navbar-navlinks flex flex-col flex-nowrap items-start text-lg p-2 pb-6 gap-6">
           <router-link :to="{name: 'home'}" @click="toggleNav">Home</router-link>
-          <router-link :to="{name: 'resume'}" @click="toggleNav">R&eacute;sum&eacute;</router-link>
+          <router-link :to="{name: 'freelance'}" @click="toggleNav">Freelance</router-link>
           <router-link :to="{name: 'projects'}" @click="toggleNav">Projects</router-link>
           <router-link :to="{name: 'about'}" @click="toggleNav">About</router-link>
         </div>
@@ -30,9 +30,9 @@
 
 <!--    Desktop navbar-->
     <div v-else class="navbar-dropdown">
-        <div class="navbar-navlinks flex flex-col flex-nowrap items-start p-2 gap-6">
+        <div class="navbar-navlinks flex flex-col flex-nowrap items-start text-lg p-2 gap-6">
           <router-link :to="{name: 'home'}" @click="toggleNav">Home</router-link>
-          <router-link :to="{name: 'resume'}" @click="toggleNav">R&eacute;sum&eacute;</router-link>
+          <router-link :to="{name: 'freelance'}" @click="toggleNav">Freelance</router-link>
           <router-link :to="{name: 'projects'}" @click="toggleNav">Projects</router-link>
           <router-link :to="{name: 'about'}" @click="toggleNav">About</router-link>
         </div>
@@ -43,7 +43,7 @@
 </template>
 
 <script>
-import {ref} from "vue";
+import {onMounted, onUnmounted, ref, watch} from "vue";
 
 export default {
   name: "NavbarComponent",
@@ -52,6 +52,17 @@ export default {
 
     const isHidden = ref(true)
     const isDesktop = ref(window.innerWidth >= 768)
+    const windowWidth = ref(null)
+
+    const onWidthChange = () => windowWidth.value = window.innerWidth
+      onMounted(() => window.addEventListener('resize', onWidthChange))
+      onUnmounted(() => window.removeEventListener('resize', onWidthChange))
+
+    watch(windowWidth, () => {
+      windowWidth.value = window.innerWidth
+      isDesktop.value = windowWidth.value >= 768;
+})
+
 
     function toggleNav() {
       isHidden.value = !isHidden.value

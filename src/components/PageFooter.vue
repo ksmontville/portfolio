@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-row flex-nowrap">
+  <div class="opacity-65 flex flex-row flex-nowrap">
 
     <div class="bg-red-500 w-4">
     </div>

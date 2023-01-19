@@ -4,7 +4,6 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <template>
   <header class="bg-red-500 text-white text-center">
-<!--    <PageHeader />-->
   </header>
 
   <nav>

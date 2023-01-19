@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomePage from '../views/HomePage.vue'
+import FreelancePage from '../views/FreelancePage.vue'
 import ResumePage from '../views/ResumePage.vue'
 import AboutMe from '../views/AboutMe.vue'
 import ProjectsPage from '../views/ProjectsPage.vue'
@@ -16,6 +17,14 @@ const router = createRouter({
         transition: 'fade'
       },
       component: HomePage
+    },
+    {
+      path: '/freelance',
+      name: 'freelance',
+      meta: {
+        transition: 'fade'
+      },
+      component: FreelancePage
     },
     {
       path: '/resume',

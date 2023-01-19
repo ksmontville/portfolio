@@ -5,8 +5,8 @@
       <button class="rounded-md bg-red-500 w-full text-center text-slate-200 hover:bg-red-400 focus:bg-red-300 active:bg-red-300 text-xl mb-1 p-4"
               :class="{active: !panel.hidden}" @click="panel.hidden = !panel.hidden">{{ panel.title }}</button>
 
-     <Transition name="slide">
-        <div :id="panel.id" class=" block p-2" v-if="!panel.hidden">
+     <Transition name="fade">
+        <div :id="panel.id" class="p-2" v-if="!panel.hidden">
           <p class="leading-loose p-2">{{ panel.text }}</p>
         </div>
      </Transition>
