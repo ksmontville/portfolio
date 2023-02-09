@@ -1,11 +1,9 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomePage from '../views/HomePage.vue'
 import FreelancePage from '../views/FreelancePage.vue'
-import ResumePage from '../views/ResumePage.vue'
 import AboutMe from '../views/AboutMe.vue'
 import ProjectsPage from '../views/ProjectsPage.vue'
 import projectDetails from '../views/ProjectDetails.vue'
-import SiteMapView from '../views/SiteMapView.vue';
 
 
 const router = createRouter({
@@ -28,28 +26,12 @@ const router = createRouter({
       component: FreelancePage
     },
     {
-      path: '/resume',
-      name: 'resume',
-      meta: {
-        transition: 'fade'
-      },
-      component: ResumePage
-    },
-    {
       path: '/projects',
       name: 'projects',
       meta: {
         transition: 'fade'
       },
       component: ProjectsPage
-    },
-    {
-      path: '/projects/:id',
-      name: 'projectDetails',
-     meta: {
-        transition: 'fade'
-      },
-      component: projectDetails
     },
     {
       path: '/about',

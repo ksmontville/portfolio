@@ -6,7 +6,6 @@ import PageHeader from './components/PageHeader.vue'
 import NavbarComponent from './components/NavbarComponent.vue'
 import HomePage from './views/HomePage.vue'
 import FreelancePage from './views/FreelancePage.vue'
-import ResumePage from './views/ResumePage.vue'
 import ProjectsPage from './views/ProjectsPage.vue'
 import ProjectDetails from './views/ProjectDetails.vue'
 import ProjectCards from './components/ProjectCards.vue'
@@ -25,7 +24,6 @@ app
     .component('NavbarComponent', NavbarComponent)
     .component('HomePage', HomePage)
     .component('FreelancePage', FreelancePage)
-    .component('Resume', ResumePage)
     .component('ProjectsPage', ProjectsPage)
     .component('ProjectDetails', ProjectDetails)
     .component('ProjectCards', ProjectCards)
