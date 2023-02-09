@@ -5,6 +5,7 @@ import ResumePage from '../views/ResumePage.vue'
 import AboutMe from '../views/AboutMe.vue'
 import ProjectsPage from '../views/ProjectsPage.vue'
 import projectDetails from '../views/ProjectDetails.vue'
+import SiteMapView from '../views/SiteMapView.vue';
 
 
 const router = createRouter({
