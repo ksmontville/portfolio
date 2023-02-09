@@ -61,7 +61,7 @@ export default {
       'two': {'text': "Flexible with language frameworks and able to rapidly learn new tech stacks."},
       'three': {'text': 'Specializes in problem solving, collaboration, and communication.'},
       'four': {'text': 'Employs leadership, inclusivity, empathy, and other soft-skills developed during a career in teaching to the technology industry.'},
-      'five': {'text': 'Excited to start building your next and to generate value for your company.'}
+      'five': {'text': 'Excited to start building your next website and to generate value for your company.'}
     })
 
     const bulletPointsBot = ref({
