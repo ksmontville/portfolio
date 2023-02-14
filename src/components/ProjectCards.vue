@@ -8,10 +8,11 @@
           <div class="card flex flex-col lg:flex-row text-slate-200 rounded-lg border-2 border-red-50">
 
             <div class="flex-1 flex flex-col card-img rounded-lg rounded-r-none border-b-8 lg:border-r-4 border-red-50">
-              <div class="flex-shrink flex flex-col lg:items-start lg:justify-center gap-2 md:gap-4 lg:gap-6 p-4 md:p-6 lg:p-8 bg-red-500 border-b-4 border-red-50 rounded-lg lg:rounded-r-none rounded-b-none">
-                <p class="leading-loose text-2xl md:text-4xl">{{ project.title }}</p>
-                <p class="leading-loose md:text-xl ">{{ project.subtext }}</p>
-              </div>
+              <button @click="openLink(project.link)"
+                      class="flex-shrink flex flex-col lg:items-start lg:justify-center gap-2 md:gap-4 lg:gap-6 p-4 md:p-6 lg:p-8 bg-red-500 hover:bg-red-300 border-b-4 border-red-50 rounded-lg lg:rounded-r-none rounded-b-none">
+                  <span class="leading-loose text-2xl md:text-4xl">{{ project.title }}</span>
+                  <span class="leading-loose md:text-xl ">{{ project.subtext }}</span>
+              </button>
               <img class="flex-1 hover:border-4 hover:border-red-900" :src="project.image" :alt="project.alt" @click="openImage(project.image)">
             </div>
 
@@ -111,9 +112,13 @@ export default {
       window.open(imgSrc)
     }
 
+    const openLink = (link) => {
+      window.open(link)
+    }
+
     return {
       projects,
-      openImage,
+      openImage, openLink
     }
   }
 }
