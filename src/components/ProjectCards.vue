@@ -84,7 +84,7 @@ export default {
       },
       'mhDashboard': {
         'id': 3,
-        'title': "Mental Health Tracker",
+        'title': "Mental Health Dashboard",
         'subtext': "Take control of your mental health with Dr. Liza Ignatova.",
         'image': '/img/mentalhealthdashboard.png',
         'alt': 'Screenshot of the Mental Health Dashboard webapp.',
