@@ -59,7 +59,7 @@ export default {
       'openVegAPI': {
         'id': 1,
         'title': "OpenVeg API",
-        'subtext': "Find Vegan restaurants in your area.",
+        'subtext': "Find vegan restaurants in your area.",
         'image': '/img/openveg-api.png',
         'alt': 'Screenshot of a prototype OpenVeg API.',
         'description': 'Prototype API for locating vegan/vegetarian restaurants by state, city, and/or zip code. Uses FastAPI' +
