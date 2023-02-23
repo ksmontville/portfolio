@@ -69,21 +69,21 @@ export default {
         'link': 'https://openveg.app',
         'credentials': '[ No credentials needed ]'
       },
-      'chopThatVeg': {
-        'id': 2,
-        'title': 'Chop That Veg!',
-        'subtext': "Instructions for chopping any vegetable!",
-        'image': '/img/chop-that-veg.jpeg',
-        'alt': 'Screenshot of the the Chop That Veg! API.',
-        'description': 'NOTE: APP HAS CEASED FUNCTIONING SINCE HEROKU DISABLED THEIR FREE-TIER DATABASES. WORK IN PROGRESS! ' +
-            'Full-stack SPA where users can search for a vegetable by name or from a list. Returns' +
-            ' a procedure for chopping and useful links. Users may add new vegetables to the API.',
-        'tech': 'Vue.js, Flask, Marshmallow, SQLite, SQLAlchemy, Tailwind CSS, Netlify, Heroku',
-        'link': 'https://chop-that-veg.netlify.app/',
-        'credentials': '[ No credentials needed ]'
-      },
+      // 'chopThatVeg': {
+      //   'id': 2,
+      //   'title': 'Chop That Veg!',
+      //   'subtext': "Instructions for chopping any vegetable!",
+      //   'image': '/img/chop-that-veg.jpeg',
+      //   'alt': 'Screenshot of the the Chop That Veg! API.',
+      //   'description': 'NOTE: APP HAS CEASED FUNCTIONING SINCE HEROKU DISABLED THEIR FREE-TIER DATABASES. WORK IN PROGRESS! ' +
+      //       'Full-stack SPA where users can search for a vegetable by name or from a list. Returns' +
+      //       ' a procedure for chopping and useful links. Users may add new vegetables to the API.',
+      //   'tech': 'Vue.js, Flask, Marshmallow, SQLite, SQLAlchemy, Tailwind CSS, Netlify, Heroku',
+      //   'link': 'https://chop-that-veg.netlify.app/',
+      //   'credentials': '[ No credentials needed ]'
+      // },
       'mhDashboard': {
-        'id': 3,
+        'id': 2,
         'title': "Mental Health Dashboard",
         'subtext': "Take control of your mental health with Dr. Liza Ignatova.",
         'image': '/img/mentalhealthdashboard.png',
@@ -95,7 +95,7 @@ export default {
         'credentials': '[ Username: GuestAccount ]::[ Password: !Password ]'
       },
       'weddingRSVP': {
-        'id': 4,
+        'id': 3,
         'title': 'Wedding RSVP',
         'subtext': "Open bar, great food, photography, music & dancing!",
         'image': '/img/weddingwebsite.png',
