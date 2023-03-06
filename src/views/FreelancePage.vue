@@ -8,7 +8,7 @@
 
     <div class="flex flex-col gap-4 mb-8" id="">
       <p class="text-4xl text-center font-bold leading-loose">Black Moon Games</p>
-      <p class="text-lg italic text-center leading-loose text-red-500">Small Business Website with Dynamic Events Calendar and Custom CMS</p>
+      <p class="text-lg italic text-center leading-loose text-red-500">Small Business Website with Dynamic Events Calendar and Headless CMS</p>
       <div class="">
         <CarouselComponentFreelanceBMG />
       </div>
@@ -34,13 +34,13 @@
           </li>
           <li>
             <img class="inline p-2" src="/icons/caret-right-red.svg" alt="Carat Right">
-            Includes a custom content management system using Django Wagtail CMS. The admin user can edit numerous rich text fields
+            Includes a headless content management system using Django Wagtail CMS. The admin user can edit numerous rich text fields
             on the website including the hero section, add events, descriptions, and timeframes to the event calendar, upload images to a carousel,
             add links to various sections of their online store page, and more.
           </li>
           <li>
             <img class="inline p-2" src="/icons/caret-right-red.svg" alt="Carat Right">
-            Uses Vue 3 to create a dynamic front end which implements a variety of async API calls to the back end for fetching content.
+            Uses Vue 3 to create a dynamic frontend which implements a variety of async API calls to the backend for fetching content.
           </li>
           <li>
             <img class="inline p-2" src="/icons/caret-right-red.svg" alt="Carat Right">
@@ -48,7 +48,7 @@
           </li>
           <li>
             <img class="inline p-2" src="/icons/caret-right-red.svg" alt="Carat Right">
-            Front end is a single page app hosted on Netlify, and the backend & custom CMS are hosted on Heroku
+            Frontend is a single page app hosted on Netlify, and the backend & headless CMS are hosted on Heroku
             for deployment efficiency and curated database management. Image content is hosted on a separate Amazon S3 bucket.
           </li>
         </ul>
