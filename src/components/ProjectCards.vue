@@ -94,19 +94,19 @@ export default {
         'link': 'https://drliza-mentalhealth.herokuapp.com/',
         'credentials': '[ Username: GuestAccount ]::[ Password: !Password ]'
       },
-    //   'weddingRSVP': {
-    //     'id': 3,
-    //     'title': 'Wedding RSVP',
-    //     'subtext': "Open bar, great food, photography, music & dancing!",
-    //     'image': '/img/weddingwebsite.png',
-    //     'alt': 'Screenshot showing the wedding RSVP form and website.',
-    //     'description': 'A personal wedding website with password protection, guest RSVP form, and links to travel accommodations which' +
-    //         ' I used to keep track of my event attendees. Uses vanilla Python Django for MVT format and traditional serverside rendering.',
-    //     'tech': 'Python Django, Django Lockdown, JavaScript, Bootstrap 5, Heroku',
-    //     'link': 'https://www.montovacelebration.com',
-    //     'credentials': '[ Password: 052723 ]'
-    //   },
-    // })
+      // 'weddingRSVP': {
+      //   'id': 3,
+      //   'title': 'Wedding RSVP',
+      //   'subtext': "Open bar, great food, photography, music & dancing!",
+      //   'image': '/img/weddingwebsite.png',
+      //   'alt': 'Screenshot showing the wedding RSVP form and website.',
+      //   'description': 'A personal wedding website with password protection, guest RSVP form, and links to travel accommodations which' +
+      //       ' I used to keep track of my event attendees. Uses vanilla Python Django for MVT format and traditional serverside rendering.',
+      //   'tech': 'Python Django, Django Lockdown, JavaScript, Bootstrap 5, Heroku',
+      //   'link': 'https://www.montovacelebration.com',
+      //   'credentials': '[ Password: 052723 ]'
+      // },
+    })
 
     const openImage = (imgSrc) => {
       window.open(imgSrc)
