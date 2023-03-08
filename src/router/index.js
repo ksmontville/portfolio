@@ -1,9 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomePage from '../views/HomePage.vue'
-import FreelancePage from '../views/ConsultingPage.vue'
+import ConsultingPage from '../views/ConsultingPage.vue'
 import AboutMe from '../views/AboutMe.vue'
 import ProjectsPage from '../views/ProjectsPage.vue'
-import projectDetails from '../views/ProjectDetails.vue'
 
 
 const router = createRouter({
@@ -18,12 +17,12 @@ const router = createRouter({
       component: HomePage
     },
     {
-      path: '/freelance',
-      name: 'freelance',
+      path: '/consulting',
+      name: 'consulting',
       meta: {
         transition: 'fade'
       },
-      component: FreelancePage
+      component: ConsultingPage
     },
     {
       path: '/projects',

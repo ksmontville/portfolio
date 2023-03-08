@@ -21,7 +21,7 @@
       <div v-show="!isHidden" class="navbar-dropdown">
         <div class="navbar-navlinks flex flex-col flex-nowrap items-start text-lg p-2 pb-6 gap-6">
           <router-link :to="{name: 'home'}" @click="toggleNav">Home</router-link>
-          <router-link :to="{name: 'freelance'}" @click="toggleNav">Consulting</router-link>
+          <router-link :to="{name: 'consulting'}" @click="toggleNav">Consulting</router-link>
           <router-link :to="{name: 'projects'}" @click="toggleNav">Projects</router-link>
           <router-link :to="{name: 'about'}" @click="toggleNav">About</router-link>
         </div>
@@ -32,7 +32,7 @@
     <div v-else class="navbar-dropdown">
         <div class="navbar-navlinks flex flex-col flex-nowrap items-start text-lg p-2 gap-6">
           <router-link :to="{name: 'home'}" @click="toggleNav">Home</router-link>
-          <router-link :to="{name: 'freelance'}" @click="toggleNav">Consulting</router-link>
+          <router-link :to="{name: 'consulting'}" @click="toggleNav">Consulting</router-link>
           <router-link :to="{name: 'projects'}" @click="toggleNav">Projects</router-link>
           <router-link :to="{name: 'about'}" @click="toggleNav">About</router-link>
         </div>
