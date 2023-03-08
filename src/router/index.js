@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomePage from '../views/HomePage.vue'
-import FreelancePage from '../views/FreelancePage.vue'
+import FreelancePage from '../views/ConsultingPage.vue'
 import AboutMe from '../views/AboutMe.vue'
 import ProjectsPage from '../views/ProjectsPage.vue'
 import projectDetails from '../views/ProjectDetails.vue'

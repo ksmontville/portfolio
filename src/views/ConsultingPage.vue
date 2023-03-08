@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col items-center justify-center gap-2 mb-8">
-    <p class="text-center leading-loose text-4xl">Freelance Web Development</p>
-    <p class="text-center leading-loose text-2xl">Examples of my <span class="text-red-500">paid</span> work.</p>
+    <p class="text-center leading-loose text-4xl">Consulting</p>
+    <p class="text-center leading-loose text-2xl">Examples of my <span class="text-red-500">paid</span> development work.</p>
   </div>
 
   <div class="flex flex-col gap-8 p-2 pt-8 pb-8 mb-12 border-t-2 border-b-2" id="container">
