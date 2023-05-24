@@ -40,7 +40,16 @@ const router = createRouter({
       },
       component: AboutMe
     },
-  ]
+    {
+      path: '/:pathMatch(.*)*',
+      name: 'error',
+      component: () => import(/*webpackChunkName: "error-page": */ '@/views/ErrorPage.vue'),
+    },
+  ],
+    scrollBehavior()
+  {
+    return {top: 0}
+  }
 })
 
 export default router
