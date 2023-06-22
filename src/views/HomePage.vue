@@ -23,8 +23,12 @@
 
       <div class="container flex flex-col gap-4 border-b-2">
         <p class="text-center leading-loose text-4xl">Why Hire <span class="text-red-500">Me</span>?</p>
-        <ul v-for="bullet in bulletPointsTop" role="list" class="mb-4">
-          <li class="leading-loose text-lg">
+        <ul role="list" class="mb-4">
+          <li class="leading-loose text-lg my-4">
+              <img class="inline p-2" src="/icons/caret-right-red.svg" alt="Carat Right">Owner and Developer of
+              <a href="https://codingcat.io" target="_blank" class="text-red-300 underline">CodingCat, LLC.</a>
+          </li>
+          <li v-for="bullet in bulletPointsTop" class="leading-loose text-lg my-4">
             <img class="inline p-2" src="/icons/caret-right-red.svg" alt="Carat Right">{{ bullet.text }}
           </li>
         </ul>
@@ -32,8 +36,8 @@
 
       <div class="container flex flex-col gap-4 border-b-2">
         <p class="text-center leading-loose text-4xl mt-8">At a <span class="text-red-500">Glance</span>:</p>
-        <ul v-for="bullet in bulletPointsBot" role="list" class="mb-4">
-          <li class="leading-loose text-lg">
+        <ul role="list" class="mb-4">
+          <li v-for="bullet in bulletPointsBot" class="leading-loose text-lg my-4">
             <img class="inline p-2" src="/icons/caret-right-red.svg" alt="Carat Right">{{ bullet.text }}
           </li>
         </ul>
@@ -57,7 +61,6 @@ export default {
     }
 
     const bulletPointsTop = ref({
-      'zero': {'text': "Owner and Developer of CodingCat, LLC"},
       'one': {'text': 'Contracting full-stack web developer building responsive, performant, accessible, custom designed' +
             ' small business websites in which clients require the ability to frequently modify page content and' +
             ' rank highly in Google Search queries.'},
