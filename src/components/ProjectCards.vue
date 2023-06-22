@@ -13,7 +13,9 @@
                   <span class="leading-loose text-2xl md:text-4xl">{{ project.title }}</span>
                   <span class="leading-loose md:text-xl ">{{ project.subtext }}</span>
               </button>
-              <img class="flex-1 hover:border-4 hover:border-red-900" :src="project.image" :alt="project.alt" @click="openImage(project.image)">
+              <a :href="project.image" target="_blank" class="flex flex-col justify-center flex-grow">
+                <img class="aspect-[4/3]" :src="project.image" :alt="project.alt">
+              </a>
             </div>
 
             <div class="flex-1 card-body text-slate-200 border-b-8 border-red-50 md:p-4">

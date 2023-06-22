@@ -1,8 +1,8 @@
 <template>
   <div class="flex flex-col items-center justify-center gap-2 mb-8">
-    <p class="text-center leading-loose text-4xl">Consulting</p>
+    <p class="text-center leading-loose text-4xl">Contracting</p>
     <p class="text-center leading-loose text-2xl">
-      Satisfied clients of my web consulting business <span class="text-red-500">CodingCat, LLC</span>.</p>
+      Satisfied clients of my web design business <span class="text-red-500">CodingCat, LLC</span>.</p>
   </div>
 
   <div class="flex flex-col gap-8 p-2 pt-8 pb-8 mb-12 border-t-2 border-b-2" id="container">

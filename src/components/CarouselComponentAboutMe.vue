@@ -3,7 +3,9 @@
         <Slide v-for="slide in slides" :key="slide.id">
           <div class="rounded-full flex flex-col items-center justify-center">
             <p class="leading-loose mb-2">{{ slide.description }}</p>
-            <img class="rounded-lg max-h-80 hover:border-4 hover:border-red-900" :src="slide.img" :alt="slide.alt" @click="openImage(slide.img)">
+              <a :href="slide.img" target="blank">
+                <img class="rounded-lg max-h-80 hover:border-4 hover:border-red-900" :src="slide.img" :alt="slide.alt">
+              </a>
           </div>
         </Slide>
 

@@ -5,7 +5,9 @@
       <p class="leading-loose text-5xl lg:text-6xl">Hello, I'm <span class="text-red-500">Kyle</span>!</p>
       <p class="leading-loose text-xl decoration-double overline mb-6">Science teacher turned <span class="text-red-500">Web Developer</span></p>
       <div class="p-6">
-        <img class="rounded-full max-w-xs hover:border-4 hover:border-red-900" src="/img/kylemontville.jpeg" alt="Kyle Montville" @click="openImage('/img/kylemontville.jpeg')">
+          <a href="/img/kylemontville.jpeg" target="_blank">
+          <img class="rounded-full max-w-xs hover:border-4 hover:border-red-900" src="/img/kylemontville.jpeg" alt="Kyle Montville">
+          </a>
       </div>
 
       <div class="flex flex-col flex-nowrap justify-center items-center border-b-2 mb-16">
@@ -55,8 +57,9 @@ export default {
     }
 
     const bulletPointsTop = ref({
-      'one': {'text': 'Full-stack web developer building small to medium-sized responsive, high speed, custom-made,' +
-            ' user friendly business websites in which clients require the ability to frequently modify page content and' +
+      'zero': {'text': "Owner and Developer of CodingCat, LLC"},
+      'one': {'text': 'Contracting full-stack web developer building responsive, performant, accessible, custom designed' +
+            ' small business websites in which clients require the ability to frequently modify page content and' +
             ' rank highly in Google Search queries.'},
       'two': {'text': "Flexible with language frameworks and able to rapidly learn new tech stacks."},
       'three': {'text': 'Specializes in problem solving, collaboration, and communication.'},
@@ -68,7 +71,7 @@ export default {
       'one': {'text': 'Former science teacher with Master of Arts in Teaching and six years of experience.'},
       'two': {'text': 'Dual major Bachelor of Science in physics and mathematics with concentrations in calculus and statistics.'},
       'three': {'text': 'Undergraduate research in astronomy and computational physics using MATLAB, Mathematica, and R.'},
-      'four': {'text': 'Living between Lebanon, NH and San Francisco, CA until June 2023.'}
+      'four': {'text': 'Living in San Francisco and looking for work either on-site, hybrid, or remote.'}
     })
 
     return {
