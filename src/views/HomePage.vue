@@ -61,9 +61,7 @@ export default {
     }
 
     const bulletPointsTop = ref({
-      'one': {'text': 'Contracting full-stack web developer building responsive, performant, accessible, custom designed' +
-            ' small business websites in which clients require the ability to frequently modify page content and' +
-            ' rank highly in Google Search queries.'},
+      'one': {'text': 'Contracting full-stack web developer building responsive, performant, accessible, custom designed small business websites with integrated content management solutions and SEO optimization.'},
       'two': {'text': "Flexible with language frameworks and able to rapidly learn new tech stacks."},
       'three': {'text': 'Specializes in problem solving, collaboration, and communication.'},
       'four': {'text': 'Employs leadership, inclusivity, empathy, and other soft-skills developed during a career in teaching to the technology industry.'},
