@@ -84,18 +84,18 @@ export default {
       //   'link': 'https://chop-that-veg.netlify.app/',
       //   'credentials': '[ No credentials needed ]'
       // },
-      'mhDashboard': {
-        'id': 2,
-        'title': "Mental Health Dashboard",
-        'subtext': "Take control of your mental health with Dr. Liza Ignatova.",
-        'image': '/img/mentalhealthdashboard.png',
-        'alt': 'Screenshot of the Mental Health Dashboard webapp.',
-        'description': 'A prototype web app serving as a repository of mental health resources and as a tool for' +
-            ' managing mental health. Currently includes a TODO and drawing board app. Work in progress!',
-        'tech': 'Vue.js, Python Django REST, Express, Auth0 API, Bootstrap 5, Heroku',
-        'link': 'https://drliza-mentalhealth.herokuapp.com/',
-        'credentials': '[ Username: GuestAccount ]::[ Password: !Password ]'
-      },
+      // 'mhDashboard': {
+      //   'id': 2,
+      //   'title': "Mental Health Dashboard",
+      //   'subtext': "Take control of your mental health with Dr. Liza Ignatova.",
+      //   'image': '/img/mentalhealthdashboard.png',
+      //   'alt': 'Screenshot of the Mental Health Dashboard webapp.',
+      //   'description': 'A prototype web app serving as a repository of mental health resources and as a tool for' +
+      //       ' managing mental health. Currently includes a TODO and drawing board app. Work in progress!',
+      //   'tech': 'Vue.js, Python Django REST, Express, Auth0 API, Bootstrap 5, Heroku',
+      //   'link': 'https://drliza-mentalhealth.herokuapp.com/',
+      //   'credentials': '[ Username: GuestAccount ]::[ Password: !Password ]'
+      // },
       // 'weddingRSVP': {
       //   'id': 3,
       //   'title': 'Wedding RSVP',
