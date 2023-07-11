@@ -4,8 +4,8 @@
         <Slide v-for="slide in slides" :key="slide.id">
           <div class="">
             <p class="p-2 text-sm leading-loose">{{ slide.description }}</p>
-              <a :href="slide.img" target="blank">
-                <img class="rounded-md h-full w-full hover:border-4 hover:border-red-900" :src="slide.img" :alt="slide.alt">
+              <a :href="slide.img" target="blank" class="flex flex-col items-center">
+                <img class="rounded-md h-3/4 w-3/4 hover:border-4 hover:border-red-900" :src="slide.img" :alt="slide.alt">
               </a>
           </div>
         </Slide>
@@ -21,8 +21,8 @@
         <Slide v-for="slide in slides" :key="slide.id">
           <div class="">
             <p class="p-2 text-sm leading-loose">{{ slide.description }}</p>
-            <a :href="slide.img" target="blank">
-              <img class="rounded-md h-full w-full hover:border-4 hover:border-red-900" :src="slide.img" :alt="slide.alt">
+            <a :href="slide.img" target="blank" class="flex flex-col items-center">
+              <img class="rounded-md h-3/4 h-3/4 hover:border-4 hover:border-red-900" :src="slide.img" :alt="slide.alt">
             </a>
           </div>
         </Slide>

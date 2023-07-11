@@ -12,7 +12,10 @@ import ProjectCards from './components/ProjectCards.vue'
 import AboutMe from './views/AboutMe.vue'
 import AccordionComponent from './components/AccordionComponent.vue'
 import CarouselComponentAboutMe from './components/CarouselComponentAboutMe.vue'
-import CarouselComponentFreelanceBMG from './components/CarouselComponentFreelanceBMG.vue';
+import BmgCarousel from './components/bmg/bmg-carousel.vue';
+import BmgInfo from './components/bmg/bmg-info.vue'
+import SrhcCarousel from './components/srhc/srhc-carousel.vue'
+import SrhcInfo from './components/srhc/srhc-info.vue';
 import PageFooter from './components/PageFooter.vue'
 import './style.css'
 
@@ -30,6 +33,9 @@ app
     .component('AboutMe', AboutMe)
     .component('AccordionComponent', AccordionComponent)
     .component('CarouselComponentAboutMe', CarouselComponentAboutMe)
-    .component('CarouselComponentFreelanceBMG', CarouselComponentFreelanceBMG)
+    .component('BmgCarousel', BmgCarousel)
+    .component('BmgInfo', BmgInfo)
+    .component('SrhcCarousel', SrhcCarousel)
+    .component('SrhcInfo', SrhcInfo)
     .component('PageFooter', PageFooter)
     .mount('#app')
